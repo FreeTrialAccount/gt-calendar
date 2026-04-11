@@ -37,7 +37,8 @@ SERIES_PREFIX = {
     "24HSeries": "🇪🇺 24H",
     "NLS": "🇩🇪 NLS",
     "Macau": "🇲🇴 Macau",
-    "GTWCAustralia": "🇦🇺 GTWC Aus",
+    "GTWC Australia": "🇦🇺 GTWC Aus",
+    "Supercars": "🇦🇺 SC",
 }
 
 
