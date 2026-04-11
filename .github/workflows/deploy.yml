@@ -1,0 +1,49 @@
+name: Generate and Deploy Calendar
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "races.csv"
+      - "generate_ics.py"
+  workflow_dispatch:  # allows manual trigger from GitHub UI
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate .ics file
+        run: python generate_ics.py
+
+      - name: Prepare Pages output
+        run: |
+          mkdir -p _site
+          cp gt-racing-calendar.ics _site/
+          echo '<html><body><h1>GT Racing Calendar</h1><p><a href="gt-racing-calendar.ics">Download .ics</a></p></body></html>' > _site/index.html
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
