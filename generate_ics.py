@@ -4,6 +4,7 @@ Reads races.csv and produces gt-racing-calendar.ics
 
 Events with time_start + timezone → proper DTSTART;TZID= entries
 Events without times → all-day DATE events (fallback for TBC)
+Handles both YYYY-MM-DD and M/D/YYYY date formats (Excel compatibility)
 """
 
 import csv
@@ -12,7 +13,7 @@ import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from hashlib import sha256
-from zoneinfo import ZoneInfo, available_timezones
+from zoneinfo import ZoneInfo
 
 # ── Constants ────────────────────────────────────────────────────────────────
 
@@ -32,7 +33,32 @@ SERIES_PREFIX = {
     "BritishGT": "🇬🇧 BGT",
     "GTAmerica": "🏎️ GTA",
     "GTWCAsia": "🌏 GTWC Asia",
+    "IGTC": "🌍 IGTC",
+    "24HSeries": "🏁 24H",
+    "NLS": "🟢 NLS",
+    "Macau": "🇲🇴 Macau",
+    "GTWCAustralia": "🇦🇺 GTWC Aus",
 }
+
+
+# ── Helpers ───────────────────────────────────────────────────────────────────
+
+
+def g(row: dict, key: str) -> str:
+    """Safely get a CSV field, returning '' if missing or None."""
+    val = row.get(key)
+    return val.strip() if val else ""
+
+
+def parse_date(date_str: str) -> datetime:
+    """Parse date string in either YYYY-MM-DD or M/D/YYYY format."""
+    s = date_str.strip()
+    for fmt in ("%Y-%m-%d", "%m/%d/%Y"):
+        try:
+            return datetime.strptime(s, fmt)
+        except ValueError:
+            continue
+    raise ValueError(f"Cannot parse date: {s!r}")
 
 
 # ── Duration Parsing ─────────────────────────────────────────────────────────
@@ -85,17 +111,12 @@ def parse_time(time_str: str) -> tuple[int, int] | None:
 
 
 def get_vtimezone(tz_id: str) -> str:
-    """Generate a VTIMEZONE block for the given IANA timezone.
-
-    This produces a simplified but functional VTIMEZONE that covers
-    the 2026 season. Calendar apps use this to correctly convert times.
-    """
+    """Generate a VTIMEZONE block for the given IANA timezone."""
     try:
         tz = ZoneInfo(tz_id)
     except (KeyError, Exception):
         return ""
 
-    # Sample two dates to find DST transitions for 2026
     jan = datetime(2026, 1, 15, tzinfo=tz)
     jul = datetime(2026, 7, 15, tzinfo=tz)
 
@@ -112,10 +133,9 @@ def get_vtimezone(tz_id: str) -> str:
         m = (total % 3600) // 60
         return f"{sign}{h:02d}{m:02d}"
 
-    lines = [f"BEGIN:VTIMEZONE", f"TZID:{tz_id}"]
+    lines = ["BEGIN:VTIMEZONE", f"TZID:{tz_id}"]
 
     if jan_offset == jul_offset:
-        # No DST — single STANDARD component
         lines.extend([
             "BEGIN:STANDARD",
             "DTSTART:19700101T000000",
@@ -125,8 +145,6 @@ def get_vtimezone(tz_id: str) -> str:
             "END:STANDARD",
         ])
     else:
-        # Has DST — add both STANDARD and DAYLIGHT
-        # Standard = winter (smaller offset in northern hemisphere)
         std_offset = min(jan_offset, jul_offset)
         dst_offset = max(jan_offset, jul_offset)
         std_name = jan_name if jan_offset <= jul_offset else jul_name
@@ -184,12 +202,6 @@ def fold_line(line: str) -> str:
     return "\r\n".join(result)
 
 
-def g(row: dict, key: str) -> str:
-    """Safely get a CSV field, returning '' if missing or None."""
-    val = row.get(key)
-    return val.strip() if val else ""
-
-
 def build_event(row: dict) -> str:
     """Build a single VEVENT block from a CSV row."""
     series = g(row, "series")
@@ -199,8 +211,8 @@ def build_event(row: dict) -> str:
     if g(row, "location"):
         location += f", {g(row, 'location')}"
 
-    dt_start = datetime.strptime(g(row, "date_start"), "%Y-%m-%d")
-    dt_end = datetime.strptime(g(row, "date_end"), "%Y-%m-%d")
+    dt_start = parse_date(g(row, "date_start"))
+    dt_end = parse_date(g(row, "date_end"))
 
     time_start = parse_time(g(row, "time_start"))
     time_end = parse_time(g(row, "time_end"))
@@ -235,7 +247,6 @@ def build_event(row: dict) -> str:
         lines.append(f"DTSTART;TZID={tz_id}:{dtstart_str}")
 
         if time_end:
-            # Handle midnight crossover (e.g. 18:00 → 00:00 means next day)
             end_base = dt_start if dt_start == dt_end else dt_end
             end_dt = end_base.replace(hour=time_end[0], minute=time_end[1])
             if time_end[0] < time_start[0] and dt_start == dt_end:
@@ -243,12 +254,8 @@ def build_event(row: dict) -> str:
             dtend_str = end_dt.strftime("%Y%m%dT%H%M%S")
             lines.append(f"DTEND;TZID={tz_id}:{dtend_str}")
         else:
-            # No end time — use duration to calculate
             end_dt = start_dt + duration
             dtend_str = end_dt.strftime("%Y%m%dT%H%M%S")
-            # If event crosses midnight into next day, use end date
-            if end_dt.date() > start_dt.date() and dt_end > dt_start:
-                pass  # duration already handles it
             lines.append(f"DTEND;TZID={tz_id}:{dtend_str}")
     else:
         # ── All-day fallback for TBC times ──
@@ -317,7 +324,7 @@ def main():
                 if tz_id:
                     tz_ids_seen.add(tz_id)
             except Exception as e:
-                print(f"WARNING: Skipping row {i} ({row.get('event_name', '???')}): {e}")
+                print(f"WARNING: Skipping row {i} ({g(row, 'event_name')}): {e}")
 
     # Generate VTIMEZONE blocks for all referenced timezones
     tz_blocks = []
