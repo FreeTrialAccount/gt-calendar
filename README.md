@@ -4,14 +4,24 @@ Subscribable iCalendar (.ics) feed of major GT and sportscar racing series.
 
 # Series covered
 
-- WEC – FIA World Endurance Championship
-- IMSA – IMSA WeatherTech SportsCar Championship
-- DTM – Deutsche Tourenwagen Masters
-- GTWCE – GT World Challenge Europe
-- SuperGT – Super GT
+    WEC — FIA World Endurance Championship
+    IMSA — IMSA WeatherTech SportsCar Championship
+    DTM — Deutsche Tourenwagen Masters
+    GTWCE — GT World Challenge Europe
+    SuperGT — Super GT (Japan)
+    GTWCA — GT World Challenge America
+    GTWCAsia — GT World Challenge Asia
+    BritishGT — British GT Championship
+    GTAmerica — GT America Series
+    IGTC — Intercontinental GT Challenge
+    24H — Michelin 24H Series
+    NLS — Nürburgring Langstrecken-Serie
+    Macau — FIA GT World Cup (Macau Grand Prix)
+    GTWCAus — GT World Challenge Australia
+    SC — Repco Supercars Championship
+    
 
-
-# How it works
+# How-to
 
 1. Edit `races.csv`
 2. Commit and push to GitHub
