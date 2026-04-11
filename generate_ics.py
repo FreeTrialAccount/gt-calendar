@@ -24,18 +24,18 @@ INPUT_FILE = "races.csv"
 
 # Emoji/prefix per series for easy scanning on your phone
 SERIES_PREFIX = {
-    "WEC": "🏁 WEC",
-    "IMSA": "🇺🇸 IMSA",
+    "WEC": "🌍 WEC",
+    "IMSA": "🌎 IMSA",
     "DTM": "🇩🇪 DTM",
     "GTWCE": "🇪🇺 GTWCE",
     "SuperGT": "🇯🇵 SGT",
-    "GTWCA": "🌎 GTWCA",
-    "BritishGT": "🇬🇧 BGT",
-    "GTAmerica": "🏎️ GTA",
-    "GTWCAsia": "🌏 GTWC Asia",
+    "GTWCA": "🦅 GTWCA",
+    "BritishGT": "🇬🇧 BGT",  
+    "GTAmerica": "🇺🇸 GTA",
+    "GTWCAsia": "🐉 GTWC Asia",
     "IGTC": "🌍 IGTC",
-    "24HSeries": "🏁 24H",
-    "NLS": "🟢 NLS",
+    "24HSeries": "🇪🇺 24H",
+    "NLS": "🇩🇪 NLS",
     "Macau": "🇲🇴 Macau",
     "GTWCAustralia": "🇦🇺 GTWC Aus",
 }
