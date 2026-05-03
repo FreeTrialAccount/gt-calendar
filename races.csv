@@ -11,16 +11,16 @@ IMSA,12 Hours of Sebring - Qualifying,Sebring International Raceway,"Sebring, FL
 IMSA,12 Hours of Sebring - Race,Sebring International Raceway,"Sebring, FL, USA",3/21/2026,3/21/2026,10:10,22:10,12h,Race,America/New_York,Starts 10:10 AM ET
 NLS,NLS1 Nurburgring - Race,Nurburgring Nordschleife,"Nurburg, Germany",3/21/2026,3/21/2026,12:00,16:00,4h,Race,Europe/Berlin,Verstappen GT3 debut for 24h prep
 24HSeries,Michelin 12H Mugello - Race Part 2,Autodromo Internazionale del Mugello,"Scarperia, Italy",3/22/2026,3/22/2026,12:00,18:30,12h,Race,Europe/Rome,Split into two parts
-GTAmerica,GT America Sonoma - Race 1,Sonoma Raceway,"Sonoma, CA, USA",3/28/2026,3/28/2026,,,40min,Race,America/Los_Angeles,Round 1 - solo driver sprints
-GTWCA,GTWCA Sonoma - Race,Sonoma Raceway,"Sonoma, CA, USA",3/28/2026,3/29/2026,,,3h,Race,America/Los_Angeles,Season opener - new 3h format
-GTWCAus,GTWC Australia - Race 1,Phillip Island Grand Prix Circuit,"Phillip Island, Victoria",3/28/2026,3/28/2026,15:55,16:55,1h,Race,Australia/Sydney,
-GTAmerica,GT America Sonoma - Race 2,Sonoma Raceway,"Sonoma, CA, USA",3/29/2026,3/29/2026,,,40min,Race,America/Los_Angeles,Round 2
-GTWCAus,GTWC Australia - Race 2,Phillip Island Grand Prix Circuit,"Phillip Island, Victoria",3/29/2026,3/29/2026,13:40,14:40,1h,Race,Australia/Sydney,
-GTWCAsia,GTWC Asia Sepang - Race 1,Sepang International Circuit,"Kuala Lumpur, Malaysia",4/4/2026,4/4/2026,,,1h,Race,Asia/Kuala_Lumpur,Round 1
+GTAmerica,GT America Sonoma - Race 1,Sonoma Raceway,"Sonoma, CA, USA",3/28/2026,3/28/2026,,,40min,Race,America/Los_Angeles,Round 1 - solo driver sprints | https://www.youtube.com/@GTWorld
+GTWCA,GTWCA Sonoma - Race,Sonoma Raceway,"Sonoma, CA, USA",3/28/2026,3/29/2026,,,3h,Race,America/Los_Angeles,Season opener - new 3h format | https://www.youtube.com/@GTWorld
+GTWCAus,GTWC Australia - Race 1,Phillip Island Grand Prix Circuit,"Phillip Island, Victoria",3/28/2026,3/28/2026,15:55,16:55,1h,Race,Australia/Sydney,https://www.youtube.com/@GTWorld
+GTAmerica,GT America Sonoma - Race 2,Sonoma Raceway,"Sonoma, CA, USA",3/29/2026,3/29/2026,,,40min,Race,America/Los_Angeles,Round 2 | https://www.youtube.com/@GTWorld
+GTWCAus,GTWC Australia - Race 2,Phillip Island Grand Prix Circuit,"Phillip Island, Victoria",3/29/2026,3/29/2026,13:40,14:40,1h,Race,Australia/Sydney,https://www.youtube.com/@GTWorld
+GTWCAsia,GTWC Asia Sepang - Race 1,Sepang International Circuit,"Kuala Lumpur, Malaysia",4/4/2026,4/4/2026,,,1h,Race,Asia/Kuala_Lumpur,Round 1 | https://www.youtube.com/@GTWorld
 NLS,NLS Nurburgring - Race,Nurburgring Nordschleife,"Nurburg, Germany",4/4/2026,4/4/2026,12:00,16:00,4h,Race,Europe/Berlin,50th NLS season - 4-hour Nordschleife race
-GTWCAsia,GTWC Asia Sepang - Race 2,Sepang International Circuit,"Kuala Lumpur, Malaysia",4/5/2026,4/5/2026,,,1h,Race,Asia/Kuala_Lumpur,Round 2
-GTWCE,GTWCE Paul Ricard 6h - Qualifying,Circuit Paul Ricard,"Le Castellet, France",4/11/2026,4/11/2026,12:05,13:20,~20min,Qualifying,Europe/Paris,Lance Stroll Competing - Endurance Cup Rd1 - https://www.gt-world-challenge-europe.com/watch-live
-GTWCE,GTWCE Paul Ricard 6h - Race,Circuit Paul Ricard,"Le Castellet, France",4/11/2026,4/11/2026,18:00,0:00,6h,Race,Europe/Paris,Lance Stroll Competing - Night race - Endurance Cup Rd1 - https://www.gt-world-challenge-europe.com/watch-liv
+GTWCAsia,GTWC Asia Sepang - Race 2,Sepang International Circuit,"Kuala Lumpur, Malaysia",4/5/2026,4/5/2026,,,1h,Race,Asia/Kuala_Lumpur,Round 2 | https://www.youtube.com/@GTWorld
+GTWCE,GTWCE Paul Ricard 6h - Qualifying,Circuit Paul Ricard,"Le Castellet, France",4/11/2026,4/11/2026,12:05,13:20,~20min,Qualifying,Europe/Paris,Lance Stroll Competing - Endurance Cup Rd1 - https://www.gt-world-challenge-europe.com/watch-live | https://www.youtube.com/@GTWorld
+GTWCE,GTWCE Paul Ricard 6h - Race,Circuit Paul Ricard,"Le Castellet, France",4/11/2026,4/11/2026,18:00,0:00,6h,Race,Europe/Paris,Lance Stroll Competing - Night race - Endurance Cup Rd1 - https://www.gt-world-challenge-europe.com/watch-liv | https://www.youtube.com/@GTWorld
 NLS,NLS Nurburgring - Qualifying,Nurburgring Nordschleife,"Nurburg, Germany",4/11/2026,4/11/2026,8:30,10:00,90min,Qualifying,Europe/Berlin,50th NLS season - 4-hour Nordschleife race
 NLS,NLS Nurburgring - Race,Nurburgring Nordschleife,"Nurburg, Germany",4/11/2026,4/11/2026,12:00,16:00,4hr,Race,Europe/Berlin,50th NLS season - 4-hour Nordschleife race
 SuperGT,Super GT Okayama - Qualifying,Okayama International Circuit,"Mimasaka, Japan",4/11/2026,4/11/2026,14:00,15:20,~1h,Qualifying,Asia/Tokyo,
@@ -36,49 +36,49 @@ NLS,NLS 24h Nurburgring Qualifiers - Race 2,Nurburgring Nordschleife,"Nurburg, G
 WEC,6 Hours of Imola - Race,Autodromo Enzo e Dino Ferrari,"Imola, Italy",4/19/2026,4/19/2026,13:00,19:00,6h,Race,Europe/Rome,Round 1 (Qatar postponed to Oct)
 DTM,DTM Red Bull Ring - Qualifying 1,Red Bull Ring,"Spielberg, Austria",4/25/2026,4/25/2026,10:05,10:25,20min,Qualifying,Europe/Vienna,Season opener
 DTM,DTM Red Bull Ring - Race 1,Red Bull Ring,"Spielberg, Austria",4/25/2026,4/25/2026,13:30,14:30,Sprint,Qualifying,Europe/Vienna,Race 1
-GTAmerica,GT America COTA - Race 1,Circuit of the Americas,"Austin, TX, USA",4/25/2026,4/25/2026,15:05,15:45,40min,Race,America/Chicago,Round 3
-GTWCA,GTWCA COTA - Race,Circuit of the Americas,"Austin, TX, USA",4/25/2026,4/26/2026,12:30,15:30,3h,Race,America/Chicago,Round 2
+GTAmerica,GT America COTA - Race 1,Circuit of the Americas,"Austin, TX, USA",4/25/2026,4/25/2026,15:05,15:45,40min,Race,America/Chicago,Round 3 | https://www.youtube.com/@GTWorld
+GTWCA,GTWCA COTA - Race,Circuit of the Americas,"Austin, TX, USA",4/25/2026,4/26/2026,12:30,15:30,3h,Race,America/Chicago,Round 2 | https://www.youtube.com/@GTWorld
 DTM,DTM Red Bull Ring - Qualifying 2,Red Bull Ring,"Spielberg, Austria",4/26/2026,4/26/2026,10:05,10:25,20min,Qualifying,Europe/Vienna,
 DTM,DTM Red Bull Ring - Race 2,Red Bull Ring,"Spielberg, Austria",4/26/2026,4/26/2026,13:30,14:30,Sprint,Race,Europe/Vienna,Race 2
-GTAmerica,GT America COTA - Race 2,Circuit of the Americas,"Austin, TX, USA",4/26/2026,4/26/2026,9:40,10:20,40min,Race,America/Chicago,Round 4
-GTWCAsia,GTWC Asia Mandalika - Race 1,Mandalika International Circuit,"Lombok, Indonesia",5/2/2026,5/2/2026,13:30,14:30,1h,Race,Asia/Makassar,Round 3
-GTWCE,GTWCE Brands Hatch Sprint - Qualifying,Brands Hatch,"Kent, UK",5/2/2026,5/2/2026,16:40,17:15,1h,Qualifying,Europe/London,
-GTWCE,GTWCE Brands Hatch Sprint - Race 1,Brands Hatch,"Kent, UK",5/2/2026,5/2/2026,9:05,9:45,1h,Race,Europe/London,Sprint Cup Rd1 - Race 1
+GTAmerica,GT America COTA - Race 2,Circuit of the Americas,"Austin, TX, USA",4/26/2026,4/26/2026,9:40,10:20,40min,Race,America/Chicago,Round 4 | https://www.youtube.com/@GTWorld
+GTWCAsia,GTWC Asia Mandalika - Race 1,Mandalika International Circuit,"Lombok, Indonesia",5/2/2026,5/2/2026,13:30,14:30,1h,Race,Asia/Makassar,Round 3 | https://www.youtube.com/@GTWorld
+GTWCE,GTWCE Brands Hatch Sprint - Qualifying,Brands Hatch,"Kent, UK",5/2/2026,5/2/2026,16:40,17:15,1h,Qualifying,Europe/London,https://www.youtube.com/@GTWorld
+GTWCE,GTWCE Brands Hatch Sprint - Race 1,Brands Hatch,"Kent, UK",5/2/2026,5/2/2026,9:05,9:45,1h,Race,Europe/London,Sprint Cup Rd1 - Race 1 | https://www.youtube.com/@GTWorld
 IMSA,Monterey SportsCar Champ. - Qualifying,WeatherTech Raceway Laguna Seca,"Monterey, CA, USA",5/2/2026,5/2/2026,15:10,16:10,~75min,Qualifying,America/Los_Angeles,3:10 PM PT
 SuperGT,Super GT Fuji 1 - Qualifying,Fuji Speedway,"Oyama, Japan",5/2/2026,5/3/2026,,,~1h,Qualifying,Asia/Tokyo,Golden Week
-GTWCAsia,GTWC Asia Mandalika - Race 2,Mandalika International Circuit,"Lombok, Indonesia",5/3/2026,5/3/2026,11:30,12:30,1h,Race,Asia/Makassar,Round 4
-GTWCE,GTWCE Brands Hatch Sprint - Race 2,Brands Hatch,"Kent, UK",5/3/2026,5/3/2026,15:45,16:45,1h,Race,Europe/London,Sprint Cup Rd1 - Race 2
-IMSA,Monterey SportsCar Champ. - Race,WeatherTech Raceway Laguna Seca,"Monterey, CA, USA",5/3/2026,5/3/2026,13:00,16:00,2h40min,Race,America/Los_Angeles,1:00 PM PT
+GTWCAsia,GTWC Asia Mandalika - Race 2,Mandalika International Circuit,"Lombok, Indonesia",5/3/2026,5/3/2026,11:30,12:30,1h,Race,Asia/Makassar,Round 4 | https://www.youtube.com/@GTWorld
+GTWCE,GTWCE Brands Hatch Sprint - Race 2,Brands Hatch,"Kent, UK",5/3/2026,5/3/2026,15:45,16:45,1h,Race,Europe/London,Sprint Cup Rd1 - Race 2 | https://www.youtube.com/@GTWorld
+IMSA,Monterey SportsCar Champ. - Race,WeatherTech Raceway Laguna Seca,"Monterey, CA, USA",5/3/2026,5/3/2026,13:00,16:00,2h40min,Race,America/Los_Angeles,WATCH WITH VPN (UK WORKED LAST): www.imsa.com/tvlive/
 SuperGT,Super GT Fuji 1 - Race,Fuji Speedway,"Oyama, Japan",5/3/2026,5/3/2026,14:00,16:00,500km,Race,Asia/Tokyo,Round 2
 WEC,6 Hours of Spa - Qualifying,Circuit de Spa-Francorchamps,"Stavelot, Belgium",5/8/2026,5/8/2026,14:30,15:45,~30min,Qualifying,Europe/Brussels,Hyperpole
-GTAmerica,GT America Sebring - Race 1,Sebring International Raceway,"Sebring, FL, USA",5/9/2026,5/9/2026,15:35,16:15,40min,Race,America/New_York,Round 5 - new GT Cup class
-GTWCA,GTWCA Sebring - Race,Sebring International Raceway,"Sebring, FL, USA",5/9/2026,5/10/2026,17:00,20:00,3h,Race,America/New_York,Round 3
-GTWCAus,GTWC Australia - Race 3,The Bend Motorsport Park,"Tailem Bend, South Australia",5/9/2026,5/9/2026,16:20,17:20,1h,Race,Australia/Adelaide,
+GTAmerica,GT America Sebring - Race 1,Sebring International Raceway,"Sebring, FL, USA",5/9/2026,5/9/2026,15:35,16:15,40min,Race,America/New_York,Round 5 - new GT Cup class | https://www.youtube.com/@GTWorld
+GTWCA,GTWCA Sebring - Race,Sebring International Raceway,"Sebring, FL, USA",5/9/2026,5/10/2026,17:00,20:00,3h,Race,America/New_York,Round 3 | https://www.youtube.com/@GTWorld
+GTWCAus,GTWC Australia - Race 3,The Bend Motorsport Park,"Tailem Bend, South Australia",5/9/2026,5/9/2026,16:20,17:20,1h,Race,Australia/Adelaide,https://www.youtube.com/@GTWorld
 WEC,6 Hours of Spa - Race,Circuit de Spa-Francorchamps,"Stavelot, Belgium",5/9/2026,5/9/2026,13:00,19:00,6h,Race,Europe/Brussels,Round 2
-GTAmerica,GT America Sebring - Race 2,Sebring International Raceway,"Sebring, FL, USA",5/10/2026,5/10/2026,10:10,10:50,40min,Race,America/New_York,Round 6
-GTWCAus,GTWC Australia - Race 4,The Bend Motorsport Park,"Tailem Bend, South Australia",5/10/2026,5/10/2026,14:10,15:10,1h,Race,Australia/Adelaide,
+GTAmerica,GT America Sebring - Race 2,Sebring International Raceway,"Sebring, FL, USA",5/10/2026,5/10/2026,10:10,10:50,40min,Race,America/New_York,Round 6 | https://www.youtube.com/@GTWorld
+GTWCAus,GTWC Australia - Race 4,The Bend Motorsport Park,"Tailem Bend, South Australia",5/10/2026,5/10/2026,14:10,15:10,1h,Race,Australia/Adelaide,https://www.youtube.com/@GTWorld
 IGTC,24 Hours of Nurburgring - Top Qualifying,Nurburgring Nordschleife,"Nurburg, Germany",5/15/2026,5/15/2026,8:50,14:30,~30min,Qualifying,Europe/Berlin,Max Verstappen competing - 3-stage Top Qualifying for SP9/SP-X classes
 IGTC,24 Hours of Nurburgring - Race,Nurburgring Nordschleife,"Nurburg, Germany",5/16/2026,5/17/2026,15:00,15:00,24h,Race,Europe/Berlin,Max Verstappen competing - IGTC Rd2 - 25.378 km Nordschleife - 150+ cars
 DTM,DTM Zandvoort - Qualifying 1,Circuit Zandvoort,"Zandvoort, Netherlands",5/23/2026,5/23/2026,10:05,10:25,20min,Qualifying,Europe/Amsterdam,
 DTM,DTM Zandvoort - Race 1,Circuit Zandvoort,"Zandvoort, Netherlands",5/23/2026,5/23/2026,13:30,14:30,Sprint,Race,Europe/Amsterdam,Race 1
 DTM,DTM Zandvoort - Qualifying 2,Circuit Zandvoort,"Zandvoort, Netherlands",5/24/2026,5/24/2026,10:05,10:25,20min,Qualifying,Europe/Amsterdam,
 DTM,DTM Zandvoort - Race 2,Circuit Zandvoort,"Zandvoort, Netherlands",5/24/2026,5/24/2026,13:30,14:30,Sprint,Race,Europe/Amsterdam,Race 2
-IMSA,Detroit Grand Prix - Qualifying,Detroit Street Circuit,"Detroit, MI, USA",5/29/2026,5/29/2026,16:50,17:25,35min,Qualifying,America/Detroit,Times TBC
-GTWCE,GTWCE Monza 3h - Qualifying,Autodromo Nazionale Monza,"Monza, Italy",5/30/2026,5/30/2026,9:50,10:50,1h,Qualifying,Europe/Rome,Endurance Cup Rd2
-IMSA,Detroit Grand Prix - Race,Detroit Street Circuit,"Detroit, MI, USA",5/30/2026,5/30/2026,16:10,17:50,100min,Race,America/Detroit,Times TBC
-GTWCE,GTWCE Monza 3h - Race,Autodromo Nazionale Monza,"Monza, Italy",5/31/2026,5/31/2026,15:00,18:00,3h,Race,Europe/Rome,Endurance Cup Rd2
+IMSA,Detroit Grand Prix - Qualifying,Detroit Street Circuit,"Detroit, MI, USA",5/29/2026,5/29/2026,16:50,17:25,35min,Qualifying,America/Detroit,WATCH WITH VPN (UK WORKED LAST): www.imsa.com/tvlive/
+GTWCE,GTWCE Monza 3h - Qualifying,Autodromo Nazionale Monza,"Monza, Italy",5/30/2026,5/30/2026,9:50,10:50,1h,Qualifying,Europe/Rome,Endurance Cup Rd2 | https://www.youtube.com/@GTWorld
+IMSA,Detroit Grand Prix - Race,Detroit Street Circuit,"Detroit, MI, USA",5/30/2026,5/30/2026,16:10,17:50,100min,Race,America/Detroit,WATCH WITH VPN (UK WORKED LAST): www.imsa.com/tvlive/
+GTWCE,GTWCE Monza 3h - Race,Autodromo Nazionale Monza,"Monza, Italy",5/31/2026,5/31/2026,15:00,18:00,3h,Race,Europe/Rome,Endurance Cup Rd2 | https://www.youtube.com/@GTWorld
 24HSeries,Michelin 12H Paul Ricard - Qualifying,Circuit Paul Ricard,"Le Castellet, France",6/5/2026,6/5/2026,17:40,18:35,~1h,Qualifying,Europe/Paris,watch: https://www.youtube.com/user/24HSeries
-GTWCAsia,GTWC Asia Shanghai - Race 1,Shanghai International Circuit,"Shanghai, China",6/5/2026,6/5/2026,14:35,15:35,1h,Race,Asia/Shanghai,Round 5 - returns after 1-year hiatus
+GTWCAsia,GTWC Asia Shanghai - Race 1,Shanghai International Circuit,"Shanghai, China",6/5/2026,6/5/2026,14:35,15:35,1h,Race,Asia/Shanghai,Round 5 - returns after 1-year hiatus | https://www.youtube.com/@GTWorld
 24HSeries,Michelin 12H Paul Ricard - Race Pt1,Circuit Paul Ricard,"Le Castellet, France",6/6/2026,6/6/2026,11:45,17:45,12h,Race,Europe/Paris,"European Series Rd3, watch: https://www.youtube.com/user/24HSeries"
-GTWCAsia,GTWC Asia Shanghai - Race 2,Shanghai International Circuit,"Shanghai, China",6/6/2026,6/6/2026,10:50,11:50,1h,Race,Asia/Shanghai,Round 6 - adjusted for exam season
+GTWCAsia,GTWC Asia Shanghai - Race 2,Shanghai International Circuit,"Shanghai, China",6/6/2026,6/6/2026,10:50,11:50,1h,Race,Asia/Shanghai,Round 6 - adjusted for exam season | https://www.youtube.com/@GTWorld
 24HSeries,Michelin 12H Paul Ricard - Race Pt2,Circuit Paul Ricard,"Le Castellet, France",6/7/2026,6/7/2026,11:30,17:30,12h,Race,Europe/Paris,"European Series Rd3, watch: https://www.youtube.com/user/24HSeries"
 WEC,24 Hours of Le Mans - Hyperpole,Circuit de la Sarthe,"Le Mans, France",6/11/2026,6/11/2026,20:00,22:25,2.5h,Qualifying,Europe/Paris,Hyperpole sessions TBC
-GTAmerica,GT America Road Atlanta - Race 1,Road Atlanta,"Braselton, GA, USA",6/13/2026,6/13/2026,,,40min,Race,America/New_York,Round 7
-GTWCA,GTWCA Road Atlanta - Race,Road Atlanta,"Braselton, GA, USA",6/13/2026,6/14/2026,,,3h,Race,America/New_York,Round 4 - first since 2011
-GTWCAus,GTWC Australia - Race 5,Queensland Raceway,"Ipswich, Queensland",6/13/2026,6/13/2026,,,,Race,Australia/Sydney,
+GTAmerica,GT America Road Atlanta - Race 1,Road Atlanta,"Braselton, GA, USA",6/13/2026,6/13/2026,,,40min,Race,America/New_York,Round 7 | https://www.youtube.com/@GTWorld
+GTWCA,GTWCA Road Atlanta - Race,Road Atlanta,"Braselton, GA, USA",6/13/2026,6/14/2026,,,3h,Race,America/New_York,Round 4 - first since 2011 | https://www.youtube.com/@GTWorld
+GTWCAus,GTWC Australia - Race 5,Queensland Raceway,"Ipswich, Queensland",6/13/2026,6/13/2026,,,,Race,Australia/Sydney,https://www.youtube.com/@GTWorld
 WEC,24 Hours of Le Mans - Race,Circuit de la Sarthe,"Le Mans, France",6/13/2026,6/14/2026,16:00,16:00,24h,Race,Europe/Paris,Round 3 - starts 4pm Saturday
-GTAmerica,GT America Road Atlanta - Race 2,Road Atlanta,"Braselton, GA, USA",6/14/2026,6/14/2026,,,40min,Race,America/New_York,Round 8
-GTWCAus,GTWC Australia - Race 6,Queensland Raceway,"Ipswich, Queensland",6/14/2026,6/14/2026,,,,Race,Australia/Sydney,
+GTAmerica,GT America Road Atlanta - Race 2,Road Atlanta,"Braselton, GA, USA",6/14/2026,6/14/2026,,,40min,Race,America/New_York,Round 8 | https://www.youtube.com/@GTWorld
+GTWCAus,GTWC Australia - Race 6,Queensland Raceway,"Ipswich, Queensland",6/14/2026,6/14/2026,,,,Race,Australia/Sydney,https://www.youtube.com/@GTWorld
 DTM,DTM Lausitzring - Qualifying 1,Lausitzring,"Klettwitz, Germany",6/20/2026,6/20/2026,10:05,10:25,20min,Qualifying,Europe/Berlin,
 DTM,DTM Lausitzring - Race 1,Lausitzring,"Klettwitz, Germany",6/20/2026,6/20/2026,13:30,14:30,Sprint,Race,Europe/Berlin,Race 1
 NLS,NLS Nurburgring - Race,Nurburgring Nordschleife,"Nurburg, Germany",6/20/2026,6/20/2026,12:00,16:00,4h,Race,Europe/Berlin,NLS6
@@ -86,56 +86,56 @@ SuperGT,Super GT Sepang - Qualifying,Sepang International Circuit,"Kuala Lumpur,
 DTM,DTM Lausitzring - Qualifying 2,Lausitzring,"Klettwitz, Germany",6/21/2026,6/21/2026,10:05,10:25,20min,Qualifying,Europe/Berlin,
 DTM,DTM Lausitzring - Race 2,Lausitzring,"Klettwitz, Germany",6/21/2026,6/21/2026,13:30,14:30,Sprint,Race,Europe/Berlin,Race 2
 SuperGT,Super GT Sepang - Race,Sepang International Circuit,"Kuala Lumpur, Malaysia",6/21/2026,6/21/2026,15:00,,300km,Race,Asia/Kuala_Lumpur,Round 3 - moved to avoid Spa 24h clash; POSTPONED - Sepang round delayed to 2027 or later due to geopolitical situation
-GTWCE,24 Hours of Spa - Qualifying,Circuit de Spa-Francorchamps,"Stavelot, Belgium",6/25/2026,6/26/2026,15:24,15:55,30min,Qualifying,Europe/Brussels,Superpole
-GTWCE,24 Hours of Spa - Race,Circuit de Spa-Francorchamps,"Stavelot, Belgium",6/27/2026,6/28/2026,16:30,,24h,Race,Europe/Brussels,Starts 4:30 PM - Crown jewel 4x points
-IMSA,Sahlen's 6 Hours of the Glen - Qualifying,Watkins Glen International,"Watkins Glen, NY, USA",6/27/2026,6/27/2026,15:35,16:55,80min,Qualifying,America/New_York,Times TBC
-IMSA,Sahlen's 6 Hours of the Glen - Race,Watkins Glen International,"Watkins Glen, NY, USA",6/28/2026,6/28/2026,12:00,18:00,6h,Race,America/New_York,Endurance Cup round
+GTWCE,24 Hours of Spa - Qualifying,Circuit de Spa-Francorchamps,"Stavelot, Belgium",6/25/2026,6/26/2026,15:24,15:55,30min,Qualifying,Europe/Brussels,Superpole | https://www.youtube.com/@GTWorld
+GTWCE,24 Hours of Spa - Race,Circuit de Spa-Francorchamps,"Stavelot, Belgium",6/27/2026,6/28/2026,16:30,,24h,Race,Europe/Brussels,Starts 4:30 PM - Crown jewel 4x points | https://www.youtube.com/@GTWorld
+IMSA,Sahlen's 6 Hours of the Glen - Qualifying,Watkins Glen International,"Watkins Glen, NY, USA",6/27/2026,6/27/2026,15:35,16:55,80min,Qualifying,America/New_York,WATCH WITH VPN (UK WORKED LAST): www.imsa.com/tvlive/
+IMSA,Sahlen's 6 Hours of the Glen - Race,Watkins Glen International,"Watkins Glen, NY, USA",6/28/2026,6/28/2026,12:00,18:00,6h,Race,America/New_York,Endurance Cup round | WATCH WITH VPN (UK WORKED LAST): www.imsa.com/tvlive/
 24HSeries,Michelin 12H Nurburgring - Qualifying,Nurburgring (GP + Nordschleife),"Nurburg, Germany",7/3/2026,7/3/2026,15:25,17:25,2h,Qualifying,Europe/Berlin,"Combined GP + Nordschleife layout, https://www.youtube.com/user/24HSeries"
 24HSeries,Michelin 12H Nurburgring - Race Pt1,Nurburgring (GP + Nordschleife),"Nurburg, Germany",7/4/2026,7/4/2026,12:00,18:00,12h,Race,Europe/Berlin,"European Series Rd4, watch: https://www.youtube.com/user/24HSeries"
-24HSeries,Michelin 12H Nurburgring - Race Pt2,Nurburgring (GP + Nordschleife),"Nurburg, Germany",7/5/2026,7/5/2026,12:00,18:00,12h,Race,Europe/Berlin,"European Series Rd4, watch: https://www.youtube.com/user/24HSeries"
 DTM,DTM Norisring - Qualifying 1,Norisring,"Nuremberg, Germany",7/4/2026,7/4/2026,10:05,10:25,20min,Qualifying,Europe/Berlin,Street circuit
 DTM,DTM Norisring - Race 1,Norisring,"Nuremberg, Germany",7/4/2026,7/4/2026,13:30,14:30,Sprint,Race,Europe/Berlin,Race 1
+24HSeries,Michelin 12H Nurburgring - Race Pt2,Nurburgring (GP + Nordschleife),"Nurburg, Germany",7/5/2026,7/5/2026,12:00,18:00,12h,Race,Europe/Berlin,"European Series Rd4, watch: https://www.youtube.com/user/24HSeries"
 DTM,DTM Norisring - Qualifying 2,Norisring,"Nuremberg, Germany",7/5/2026,7/5/2026,10:05,10:25,20min,Qualifying,Europe/Berlin,
 DTM,DTM Norisring - Race 2,Norisring,"Nuremberg, Germany",7/5/2026,7/5/2026,13:30,14:30,Sprint,Race,Europe/Berlin,Race 2
-GTWCAsia,GTWC Asia Fuji - Race 1,Fuji International Speedway,"Oyama, Japan",7/11/2026,7/11/2026,,,1h,Race,Asia/Tokyo,Round 7
-IMSA,Chevrolet Grand Prix - Qualifying,Canadian Tire Motorsport Park,"Bowmanville, ON, Canada",7/11/2026,7/11/2026,15:55,17:05,~75min,Qualifying,America/Toronto,Times TBC
+GTWCAsia,GTWC Asia Fuji - Race 1,Fuji International Speedway,"Oyama, Japan",7/11/2026,7/11/2026,,,1h,Race,Asia/Tokyo,Round 7 | https://www.youtube.com/@GTWorld
+IMSA,Chevrolet Grand Prix - Qualifying,Canadian Tire Motorsport Park,"Bowmanville, ON, Canada",7/11/2026,7/11/2026,15:55,17:05,~75min,Qualifying,America/Toronto,WATCH WITH VPN (UK WORKED LAST): www.imsa.com/tvlive/
 WEC,6 Hours of Sao Paulo - Qualifying,Autodromo Jose Carlos Pace,"Sao Paulo, Brazil",7/11/2026,7/11/2026,,,~30min,Qualifying,America/Sao_Paulo,Times TBC
-GTWCAsia,GTWC Asia Fuji - Race 2,Fuji International Speedway,"Oyama, Japan",7/12/2026,7/12/2026,,,1h,Race,Asia/Tokyo,Round 8
-IMSA,Chevrolet Grand Prix - Race,Canadian Tire Motorsport Park,"Bowmanville, ON, Canada",7/12/2026,7/12/2026,14:00,16:40,2h40min,Race,America/Toronto,LMP2 + GTD PRO + GTD only
+GTWCAsia,GTWC Asia Fuji - Race 2,Fuji International Speedway,"Oyama, Japan",7/12/2026,7/12/2026,,,1h,Race,Asia/Tokyo,Round 8 | https://www.youtube.com/@GTWorld
+IMSA,Chevrolet Grand Prix - Race,Canadian Tire Motorsport Park,"Bowmanville, ON, Canada",7/12/2026,7/12/2026,14:00,16:40,2h40min,Race,America/Toronto,WATCH WITH VPN (UK WORKED LAST): www.imsa.com/tvlive/
 WEC,6 Hours of Sao Paulo - Race,Autodromo Jose Carlos Pace,"Sao Paulo, Brazil",7/12/2026,7/12/2026,11:00,17:00,6h,Race,America/Sao_Paulo,Round 4
-GTWCE,GTWCE Misano Sprint - Race 1,Misano World Circuit,"Misano Adriatico, Italy",7/18/2026,7/18/2026,20:30,21:30,1h,Race,Europe/Rome,Sprint Cup Rd3 - Race 1
-GTWCE,GTWCE Misano Sprint - Race 2,Misano World Circuit,"Misano Adriatico, Italy",7/19/2026,7/19/2026,14:30,15:30,1h,Race,Europe/Rome,Sprint Cup Rd3 - Race 2
+GTWCE,GTWCE Misano Sprint - Race 1,Misano World Circuit,"Misano Adriatico, Italy",7/18/2026,7/18/2026,20:30,21:30,1h,Race,Europe/Rome,Sprint Cup Rd3 - Race 1 | https://www.youtube.com/@GTWorld
+GTWCE,GTWCE Misano Sprint - Race 2,Misano World Circuit,"Misano Adriatico, Italy",7/19/2026,7/19/2026,14:30,15:30,1h,Race,Europe/Rome,Sprint Cup Rd3 - Race 2 | https://www.youtube.com/@GTWorld
 DTM,DTM Oschersleben - Qualifying 1,Motorsport Arena Oschersleben,"Oschersleben, Germany",7/25/2026,7/25/2026,10:05,10:25,20min,Qualifying,Europe/Berlin,
 DTM,DTM Oschersleben - Race 1,Motorsport Arena Oschersleben,"Oschersleben, Germany",7/25/2026,7/25/2026,13:30,14:30,Sprint,Race,Europe/Berlin,Race 1
-GTWCAus,GTWC Australia - Race 7,Hidden Valley Raceway,"Darwin, Northern Territory",7/25/2026,7/25/2026,,,,Race,Australia/Eucla,
+GTWCAus,GTWC Australia - Race 7,Hidden Valley Raceway,"Darwin, Northern Territory",7/25/2026,7/25/2026,,,,Race,Australia/Eucla,https://www.youtube.com/@GTWorld
 DTM,DTM Oschersleben - Qualifying 2,Motorsport Arena Oschersleben,"Oschersleben, Germany",7/26/2026,7/26/2026,10:05,10:25,20min,Qualifying,Europe/Berlin,
 DTM,DTM Oschersleben - Race 2,Motorsport Arena Oschersleben,"Oschersleben, Germany",7/26/2026,7/26/2026,13:30,14:30,Sprint,Race,Europe/Berlin,Race 2
-GTWCAus,GTWC Australia - Race 8,Hidden Valley Raceway,"Darwin, Northern Territory",7/26/2026,7/26/2026,,,,Race,Australia/Eucla,
-GTWCE,GTWCE Magny-Cours Sprint - Race 1,Circuit de Nevers Magny-Cours,"Magny-Cours, France",8/1/2026,8/1/2026,21:15,22:15,1h,Race,Europe/Paris,Sprint Cup Rd4 - Race 1
-IMSA,IMSA SportsCar Weekend - Qualifying,Road America,"Elkhart Lake, WI, USA",8/1/2026,8/1/2026,,,~75min,Qualifying,America/Chicago,Times TBC
+GTWCAus,GTWC Australia - Race 8,Hidden Valley Raceway,"Darwin, Northern Territory",7/26/2026,7/26/2026,,,,Race,Australia/Eucla,https://www.youtube.com/@GTWorld
+GTWCE,GTWCE Magny-Cours Sprint - Race 1,Circuit de Nevers Magny-Cours,"Magny-Cours, France",8/1/2026,8/1/2026,21:15,22:15,1h,Race,Europe/Paris,Sprint Cup Rd4 - Race 1 | https://www.youtube.com/@GTWorld
+IMSA,IMSA SportsCar Weekend - Qualifying,Road America,"Elkhart Lake, WI, USA",8/1/2026,8/1/2026,,,~75min,Qualifying,America/Chicago,WATCH WITH VPN (UK WORKED LAST): www.imsa.com/tvlive/
 NLS,NLS Nurburgring - Race,Nurburgring Nordschleife,"Nurburg, Germany",8/1/2026,8/1/2026,12:00,16:00,4h,Race,Europe/Berlin,NLS7
 SuperGT,Super GT Fuji 2 - Qualifying,Fuji Speedway,"Oyama, Japan",8/1/2026,8/1/2026,,,~1h,Qualifying,Asia/Tokyo,
-GTWCE,GTWCE Magny-Cours Sprint - Race 2,Circuit de Nevers Magny-Cours,"Magny-Cours, France",8/2/2026,8/2/2026,15:30,16:30,1h,Race,Europe/Paris,Sprint Cup Rd4 - Race 2
-IMSA,IMSA SportsCar Weekend - Race,Road America,"Elkhart Lake, WI, USA",8/2/2026,8/2/2026,,,6h,Race,America/Chicago,New 6h format for 2026 - Endurance Cup
+GTWCE,GTWCE Magny-Cours Sprint - Race 2,Circuit de Nevers Magny-Cours,"Magny-Cours, France",8/2/2026,8/2/2026,15:30,16:30,1h,Race,Europe/Paris,Sprint Cup Rd4 - Race 2 | https://www.youtube.com/@GTWorld
+IMSA,IMSA SportsCar Weekend - Race,Road America,"Elkhart Lake, WI, USA",8/2/2026,8/2/2026,,,6h,Race,America/Chicago,Endurance Cup | WATCH WITH VPN (UK WORKED LAST): www.imsa.com/tvlive/
 SuperGT,Super GT Fuji 2 - Race,Fuji Speedway,"Oyama, Japan",8/2/2026,8/2/2026,14:00,,300km,Race,Asia/Tokyo,Round 4
 Supercars,500 at the Bend,Tailem Bend,,8/11/2026,8/13/2026,,,,Race,Australia/Sydney,
 DTM,DTM Nurburgring - Qualifying 1,Nurburgring,"Nurburg, Germany",8/15/2026,8/15/2026,10:05,10:25,20min,Qualifying,Europe/Berlin,
 DTM,DTM Nurburgring - Race 1,Nurburgring,"Nurburg, Germany",8/15/2026,8/15/2026,13:30,14:30,Sprint,Race,Europe/Berlin,Race 1
 DTM,DTM Nurburgring - Qualifying 2,Nurburgring,"Nurburg, Germany",8/16/2026,8/16/2026,10:05,10:25,20min,Qualifying,Europe/Berlin,
 DTM,DTM Nurburgring - Race 2,Nurburgring,"Nurburg, Germany",8/16/2026,8/16/2026,13:30,14:30,Sprint,Race,Europe/Berlin,Race 2
-GTWCAus,GTWC Australia - Race 9,Sydney Motorsport Park,"Eastern Creek, New South Wales",8/19/2026,8/19/2026,,,,Race,Australia/Sydney,
-GTWCAus,GTWC Australia - Race 10,Sydney Motorsport Park,"Eastern Creek, New South Wales",8/20/2026,8/20/2026,,,,Race,Australia/Sydney,
-IMSA,Michelin GT Challenge - Qualifying,VIRginia International Raceway,"Alton, VA, USA",8/22/2026,8/22/2026,,,~75min,Qualifying,America/New_York,Times TBC
+GTWCAus,GTWC Australia - Race 9,Sydney Motorsport Park,"Eastern Creek, New South Wales",8/19/2026,8/19/2026,,,,Race,Australia/Sydney,https://www.youtube.com/@GTWorld
+GTWCAus,GTWC Australia - Race 10,Sydney Motorsport Park,"Eastern Creek, New South Wales",8/20/2026,8/20/2026,,,,Race,Australia/Sydney,https://www.youtube.com/@GTWorld
+IMSA,Michelin GT Challenge - Qualifying,VIRginia International Raceway,"Alton, VA, USA",8/22/2026,8/22/2026,,,~75min,Qualifying,America/New_York,WATCH WITH VPN (UK WORKED LAST): www.imsa.com/tvlive/
 SuperGT,Super GT Suzuka - Qualifying,Suzuka Circuit,"Suzuka, Japan",8/22/2026,8/22/2026,,,~1h,Qualifying,Asia/Tokyo,
-IMSA,Michelin GT Challenge - Race,VIRginia International Raceway,"Alton, VA, USA",8/23/2026,8/23/2026,,,2h40min,Race,America/New_York,GTD PRO + GTD only
+IMSA,Michelin GT Challenge - Race,VIRginia International Raceway,"Alton, VA, USA",8/23/2026,8/23/2026,,,2h40min,Race,America/New_York,WATCH WITH VPN (UK WORKED LAST): www.imsa.com/tvlive/
 SuperGT,Super GT Suzuka - Race,Suzuka Circuit,"Suzuka, Japan",8/23/2026,8/23/2026,14:00,,300km,Race,Asia/Tokyo,Round 5
-GTAmerica,GT America Road America - Race 1,Road America,"Elkhart Lake, WI, USA",8/29/2026,8/29/2026,,,40min,Race,America/Chicago,Round 9
-GTWCA,GTWCA Road America - Race,Road America,"Elkhart Lake, WI, USA",8/29/2026,8/30/2026,,,3h,Race,America/Chicago,Round 5
-GTWCAsia,GTWC Asia Okayama - Race 1,Okayama International Circuit,"Mimasaka, Japan",8/29/2026,8/29/2026,,,1h,Race,Asia/Tokyo,Round 9 - SRO GT PowerTour
-GTWCE,GTWCE Nurburgring 3h - Qualifying,Nurburgring,"Nurburg, Germany",8/29/2026,8/29/2026,10:20,11:20,1hr,Qualifying,Europe/Berlin,Endurance Cup Rd3
-GTAmerica,GT America Road America - Race 2,Road America,"Elkhart Lake, WI, USA",8/30/2026,8/30/2026,,,40min,Race,America/Chicago,Round 10
-GTWCAsia,GTWC Asia Okayama - Race 2,Okayama International Circuit,"Mimasaka, Japan",8/30/2026,8/30/2026,,,1h,Race,Asia/Tokyo,Round 10
-GTWCE,GTWCE Nurburgring 3h - Race,Nurburgring,"Nurburg, Germany",8/30/2026,8/30/2026,15:00,18:00,3h,Race,Europe/Berlin,Endurance Cup Rd3 - triple header weekend
+GTAmerica,GT America Road America - Race 1,Road America,"Elkhart Lake, WI, USA",8/29/2026,8/29/2026,,,40min,Race,America/Chicago,Round 9 | https://www.youtube.com/@GTWorld
+GTWCA,GTWCA Road America - Race,Road America,"Elkhart Lake, WI, USA",8/29/2026,8/30/2026,,,3h,Race,America/Chicago,Round 5 | https://www.youtube.com/@GTWorld
+GTWCAsia,GTWC Asia Okayama - Race 1,Okayama International Circuit,"Mimasaka, Japan",8/29/2026,8/29/2026,,,1h,Race,Asia/Tokyo,Round 9 - SRO GT PowerTour | https://www.youtube.com/@GTWorld
+GTWCE,GTWCE Nurburgring 3h - Qualifying,Nurburgring,"Nurburg, Germany",8/29/2026,8/29/2026,10:20,11:20,1hr,Qualifying,Europe/Berlin,Endurance Cup Rd3 | https://www.youtube.com/@GTWorld
+GTAmerica,GT America Road America - Race 2,Road America,"Elkhart Lake, WI, USA",8/30/2026,8/30/2026,,,40min,Race,America/Chicago,Round 10 | https://www.youtube.com/@GTWorld
+GTWCAsia,GTWC Asia Okayama - Race 2,Okayama International Circuit,"Mimasaka, Japan",8/30/2026,8/30/2026,,,1h,Race,Asia/Tokyo,Round 10 | https://www.youtube.com/@GTWorld
+GTWCE,GTWCE Nurburgring 3h - Race,Nurburgring,"Nurburg, Germany",8/30/2026,8/30/2026,15:00,18:00,3h,Race,Europe/Berlin,Endurance Cup Rd3 - triple header weekend | https://www.youtube.com/@GTWorld
 WEC,Lone Star Le Mans - Qualifying,Circuit of the Americas,"Austin, TX, USA",9/5/2026,9/5/2026,,,~30min,Qualifying,America/Chicago,Times TBC
 WEC,Lone Star Le Mans - Race,Circuit of the Americas,"Austin, TX, USA",9/6/2026,9/6/2026,12:00,18:00,6h,Race,America/Chicago,Round 5
 DTM,DTM Sachsenring - Qualifying 1,Sachsenring,"Hohenstein-Ernstthal, Germany",9/12/2026,9/12/2026,10:05,10:25,20min,Qualifying,Europe/Berlin,
@@ -149,34 +149,34 @@ NLS,NLS Nurburgring - Race,Nurburgring Nordschleife,"Nurburg, Germany",9/13/2026
 24HSeries,Michelin 24H Barcelona - Qualifying,Circuit de Barcelona-Catalunya,"Barcelona, Spain",9/18/2026,9/18/2026,,,~1h,Qualifying,Europe/Madrid,"Series finale, watch: https://www.youtube.com/user/24HSeries"
 IMSA,Battle on the Bricks - Qualifying,Indianapolis Motor Speedway,"Indianapolis, IN, USA",9/18/2026,9/18/2026,,,~75min,Qualifying,America/Indiana/Indianapolis,Times TBC
 24HSeries,Michelin 24H Barcelona - Race,Circuit de Barcelona-Catalunya,"Barcelona, Spain",9/19/2026,9/20/2026,,,24h,Race,Europe/Madrid,"Creventic European Series finale, watch: https://www.youtube.com/user/24HSeries"
-GTWCE,GTWCE Zandvoort Sprint - Race 1,Circuit Zandvoort,"Zandvoort, Netherlands",9/19/2026,9/19/2026,14:45,15:45,1h,Race,Europe/Amsterdam,Sprint Cup Rd5 - Race 1
-IMSA,Battle on the Bricks - Race,Indianapolis Motor Speedway,"Indianapolis, IN, USA",9/19/2026,9/19/2026,,,6h,Race,America/Indiana/Indianapolis,6h format reverted from 2h40m
+GTWCE,GTWCE Zandvoort Sprint - Race 1,Circuit Zandvoort,"Zandvoort, Netherlands",9/19/2026,9/19/2026,14:45,15:45,1h,Race,Europe/Amsterdam,Sprint Cup Rd5 - Race 1 | https://www.youtube.com/@GTWorld
+IMSA,Battle on the Bricks - Race,Indianapolis Motor Speedway,"Indianapolis, IN, USA",9/19/2026,9/19/2026,,,6h,Race,America/Indiana/Indianapolis,WATCH WITH VPN (UK WORKED LAST): www.imsa.com/tvlive/
 SuperGT,Super GT Sugo - Qualifying,Sportsland Sugo,"Murata, Japan",9/19/2026,9/19/2026,,,~1h,Qualifying,Asia/Tokyo,
-GTWCE,GTWCE Zandvoort Sprint - Race 2,Circuit Zandvoort,"Zandvoort, Netherlands",9/20/2026,9/20/2026,14:15,15:15,1h,Race,Europe/Amsterdam,Sprint Cup Rd5 - Race 2
+GTWCE,GTWCE Zandvoort Sprint - Race 2,Circuit Zandvoort,"Zandvoort, Netherlands",9/20/2026,9/20/2026,14:15,15:15,1h,Race,Europe/Amsterdam,Sprint Cup Rd5 - Race 2 | https://www.youtube.com/@GTWorld
 SuperGT,Super GT Sugo - Race,Sportsland Sugo,"Murata, Japan",9/20/2026,9/20/2026,14:00,,300km,Race,Asia/Tokyo,Round 6
-GTAmerica,GT America Barber - Race 1,Barber Motorsports Park,"Birmingham, AL, USA",9/26/2026,9/26/2026,,,40min,Race,America/Chicago,Round 11
-GTWCA,GTWCA Barber - Race,Barber Motorsports Park,"Birmingham, AL, USA",9/26/2026,9/27/2026,,,3h,Race,America/Chicago,Round 6
+GTAmerica,GT America Barber - Race 1,Barber Motorsports Park,"Birmingham, AL, USA",9/26/2026,9/26/2026,,,40min,Race,America/Chicago,Round 11 | https://www.youtube.com/@GTWorld
+GTWCA,GTWCA Barber - Race,Barber Motorsports Park,"Birmingham, AL, USA",9/26/2026,9/27/2026,,,3h,Race,America/Chicago,Round 6 | https://www.youtube.com/@GTWorld
 WEC,6 Hours of Fuji - Qualifying,Fuji Speedway,"Oyama, Japan",9/26/2026,9/26/2026,,,~30min,Qualifying,Asia/Tokyo,Times TBC
-GTAmerica,GT America Barber - Race 2,Barber Motorsports Park,"Birmingham, AL, USA",9/27/2026,9/27/2026,,,40min,Race,America/Chicago,Round 12
+GTAmerica,GT America Barber - Race 2,Barber Motorsports Park,"Birmingham, AL, USA",9/27/2026,9/27/2026,,,40min,Race,America/Chicago,Round 12 | https://www.youtube.com/@GTWorld
 WEC,6 Hours of Fuji - Race,Fuji Speedway,"Oyama, Japan",9/27/2026,9/27/2026,11:00,17:00,6h,Race,Asia/Tokyo,Round 6 - 100th WEC race
-IMSA,Motul Petit Le Mans - Qualifying,Road Atlanta,"Braselton, GA, USA",10/2/2026,10/2/2026,,,~75min,Qualifying,America/New_York,Times TBC
-GTWCE,GTWCE Barcelona Sprint - Race 1,Circuit de Barcelona-Catalunya,"Barcelona, Spain",10/3/2026,10/3/2026,14:00,15:00,1h,Race,Europe/Madrid,Sprint Cup Rd6 finale - Race 1
-IMSA,Motul Petit Le Mans - Race,Road Atlanta,"Braselton, GA, USA",10/3/2026,10/3/2026,12:10,22:10,10h,Race,America/New_York,Season finale - Endurance Cup
-GTWCE,GTWCE Barcelona Sprint - Race 2,Circuit de Barcelona-Catalunya,"Barcelona, Spain",10/4/2026,10/4/2026,16:00,17:00,1h,Race,Europe/Madrid,Sprint Cup Rd6 finale - Race 2
+IMSA,Motul Petit Le Mans - Qualifying,Road Atlanta,"Braselton, GA, USA",10/2/2026,10/2/2026,,,~75min,Qualifying,America/New_York,WATCH WITH VPN (UK WORKED LAST): www.imsa.com/tvlive/
+GTWCE,GTWCE Barcelona Sprint - Race 1,Circuit de Barcelona-Catalunya,"Barcelona, Spain",10/3/2026,10/3/2026,14:00,15:00,1h,Race,Europe/Madrid,Sprint Cup Rd6 finale - Race 1 | https://www.youtube.com/@GTWorld
+IMSA,Motul Petit Le Mans - Race,Road Atlanta,"Braselton, GA, USA",10/3/2026,10/3/2026,12:10,22:10,10h,Race,America/New_York,Season finale - Endurance Cup | WATCH WITH VPN (UK WORKED LAST): www.imsa.com/tvlive/
+GTWCE,GTWCE Barcelona Sprint - Race 2,Circuit de Barcelona-Catalunya,"Barcelona, Spain",10/4/2026,10/4/2026,16:00,17:00,1h,Race,Europe/Madrid,Sprint Cup Rd6 finale - Race 2 | https://www.youtube.com/@GTWorld
 Supercars,Bathurst 1000,Mount Panorama Circuit,,10/8/2026,10/10/2026,,,,Race,Australia/Bathurst,
 DTM,DTM Hockenheimring - Qualifying 1,Hockenheimring,"Hockenheim, Germany",10/10/2026,10/10/2026,10:05,10:25,20min,Qualifying,Europe/Berlin,Season finale
 DTM,DTM Hockenheimring - Race 1,Hockenheimring,"Hockenheim, Germany",10/10/2026,10/10/2026,13:30,14:30,Sprint,Race,Europe/Berlin,Race 1
-GTAmerica,GT America Indianapolis - Race 1,Indianapolis Motor Speedway,"Indianapolis, IN, USA",10/10/2026,10/10/2026,,,40min,Race,America/Indiana/Indianapolis,Round 13
-GTWCA,GTWCA Indy 8 Hour - Race,Indianapolis Motor Speedway,"Indianapolis, IN, USA",10/10/2026,10/11/2026,,,8h,Race,America/Indiana/Indianapolis,Season finale - Indy 8 Hour
+GTAmerica,GT America Indianapolis - Race 1,Indianapolis Motor Speedway,"Indianapolis, IN, USA",10/10/2026,10/10/2026,,,40min,Race,America/Indiana/Indianapolis,Round 13 | https://www.youtube.com/@GTWorld
+GTWCA,GTWCA Indy 8 Hour - Race,Indianapolis Motor Speedway,"Indianapolis, IN, USA",10/10/2026,10/11/2026,,,8h,Race,America/Indiana/Indianapolis,Season finale - Indy 8 Hour | https://www.youtube.com/@GTWorld
 NLS,NLS Nurburgring - Race,Nurburgring Nordschleife,"Nurburg, Germany",10/10/2026,10/10/2026,12:00,16:00,4h,Race,Europe/Berlin,NLS10
 DTM,DTM Hockenheimring - Qualifying 2,Hockenheimring,"Hockenheim, Germany",10/11/2026,10/11/2026,10:05,10:25,20min,Qualifying,Europe/Berlin,
-DTM,DTM Hockenheimring - Race 2,Hockenheimring,"Hockenheim, Germany",10/11/2026,10/11/2026,13:30,14:30,Sprint,Race,Europe/Berlin,Season finale Race 2
-GTAmerica,GT America Indianapolis - Race 2,Indianapolis Motor Speedway,"Indianapolis, IN, USA",10/11/2026,10/11/2026,,,40min,Race,America/Indiana/Indianapolis,Round 14 - Season finale
-GTWCAsia,GTWC Asia Beijing - Race 1,Beijing Street Circuit,"Beijing, China",10/17/2026,10/17/2026,,,1h,Race,Asia/Shanghai,Round 11 - street circuit
-GTWCE,GTWCE Portimao 3h - Qualifying,Autodromo Internacional do Algarve,"Portimao, Portugal",10/17/2026,10/17/2026,10:40,11:40,1hr,Qualifying,Europe/Lisbon,Endurance Cup Rd5 finale
+DTM,DTM Hockenheimring - Race 2,Hockenheimring,"Hockenheim, Germany",10/11/2026,10/11/2026,13:30,14:30,Sprint,Race,Europe/Berlin,Season finale Race 2 | https://www.youtube.com/@GTWorld
+GTAmerica,GT America Indianapolis - Race 2,Indianapolis Motor Speedway,"Indianapolis, IN, USA",10/11/2026,10/11/2026,,,40min,Race,America/Indiana/Indianapolis,Round 14 - Season finale | https://www.youtube.com/@GTWorld
+GTWCAsia,GTWC Asia Beijing - Race 1,Beijing Street Circuit,"Beijing, China",10/17/2026,10/17/2026,,,1h,Race,Asia/Shanghai,Round 11 - street circuit | https://www.youtube.com/@GTWorld
+GTWCE,GTWCE Portimao 3h - Qualifying,Autodromo Internacional do Algarve,"Portimao, Portugal",10/17/2026,10/17/2026,10:40,11:40,1hr,Qualifying,Europe/Lisbon,Endurance Cup Rd5 finale | https://www.youtube.com/@GTWorld
 SuperGT,Super GT Autopolis - Qualifying,Autopolis,"Hita, Japan",10/17/2026,10/17/2026,,,~1h,Qualifying,Asia/Tokyo,
-GTWCAsia,GTWC Asia Beijing - Race 2,Beijing Street Circuit,"Beijing, China",10/18/2026,10/18/2026,,,1h,Race,Asia/Shanghai,Round 12 - Season finale
-GTWCE,GTWCE Portimao 3h - Race,Autodromo Internacional do Algarve,"Portimao, Portugal",10/18/2026,10/18/2026,15:15,18:15,3h,Race,Europe/Lisbon,Endurance Cup Rd5 - Season finale
+GTWCAsia,GTWC Asia Beijing - Race 2,Beijing Street Circuit,"Beijing, China",10/18/2026,10/18/2026,,,1h,Race,Asia/Shanghai,Round 12 - Season finale | https://www.youtube.com/@GTWorld
+GTWCE,GTWCE Portimao 3h - Race,Autodromo Internacional do Algarve,"Portimao, Portugal",10/18/2026,10/18/2026,15:15,18:15,3h,Race,Europe/Lisbon,Endurance Cup Rd5 - Season finale | https://www.youtube.com/@GTWorld
 SuperGT,Super GT Autopolis - Race,Autopolis,"Hita, Japan",10/18/2026,10/18/2026,14:00,,300km,Race,Asia/Tokyo,Round 7
 Supercars,Gold Coast 500,Surfers Paradise Street Circuit,,10/23/2026,10/25/2026,,,,Race,Australia/Queensland,
 WEC,Qatar 1812 km - Qualifying,Lusail International Circuit,"Lusail, Qatar",10/23/2026,10/23/2026,,,~30min,Qualifying,Asia/Qatar,Rescheduled from March
@@ -189,6 +189,6 @@ SuperGT,Super GT Motegi - Race,Mobility Resort Motegi,"Motegi, Japan",11/8/2026,
 Macau,Macau GT Cup - Qualifying,Guia Circuit,Macau,11/13/2026,11/14/2026,,,~30min,Qualifying,Asia/Macau,FIA GT World Cup - typical date TBC
 Macau,Macau GT Cup - Race,Guia Circuit,Macau,11/15/2026,11/15/2026,,,Sprint,Race,Asia/Macau,Iconic street race - one-shot GT3 sprint
 Supercars,Adelaide Grand Final,Adelaide Street Circuit,,11/26/2026,11/29/2026,,,,Race,Australia/Adelaide,
-GTWCAus,GTWC Australia - Race 11,Adelaide Street Circuit,"Adelaide, South Australia",11/28/2026,11/28/2026,,,,Race,Australia/Adelaide,
-GTWCAus,GTWC Australia - Race 12,Adelaide Street Circuit,"Adelaide, South Australia",11/29/2026,11/29/2026,,,,Race,Australia/Adelaide,
+GTWCAus,GTWC Australia - Race 11,Adelaide Street Circuit,"Adelaide, South Australia",11/28/2026,11/28/2026,,,,Race,Australia/Adelaide,https://www.youtube.com/@GTWorld
+GTWCAus,GTWC Australia - Race 12,Adelaide Street Circuit,"Adelaide, South Australia",11/29/2026,11/29/2026,,,,Race,Australia/Adelaide,https://www.youtube.com/@GTWorld
 24HSeries,Michelin 8H Qatar - Race,Lusail International Circuit,"Lusail, Qatar",12/11/2026,12/12/2026,,,8h,Race,Asia/Qatar,"Middle East Trophy round, watch: https://www.youtube.com/user/24HSeries"
