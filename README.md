@@ -11,7 +11,6 @@ Subscribable iCalendar (.ics) feed of major GT and sportscar racing series.
     SuperGT — Super GT (Japan)
     GTWCA — GT World Challenge America
     GTWCAsia — GT World Challenge Asia
-    BritishGT — British GT Championship
     GTAmerica — GT America Series
     IGTC — Intercontinental GT Challenge
     24H — Michelin 24H Series
