@@ -13,11 +13,11 @@ Subscribable iCalendar (.ics) feed of major GT and sportscar racing series.
     GTWCAsia — GT World Challenge Asia
     GTAmerica — GT America Series
     IGTC — Intercontinental GT Challenge
-    24H — Michelin 24H Series
+    24HSeries — Michelin 24H Series
     NLS — Nürburgring Langstrecken-Serie
     Macau — FIA GT World Cup (Macau Grand Prix)
     GTWCAus — GT World Challenge Australia
-    SC — Repco Supercars Championship
+    Supercars — Repco Supercars Championship
     
 
 # How-to
@@ -43,8 +43,13 @@ Subscribable iCalendar (.ics) feed of major GT and sportscar racing series.
 | event_name | Yes | Race/event name | `24 Hours of Le Mans` |
 | circuit | Yes | Track name | `Circuit de la Sarthe` |
 | location | No | City, country | `Le Mans, France` |
-| date_start | Yes | Start date (YYYY-MM-DD) | `2026-06-13` |
-| date_end | Yes | End date (YYYY-MM-DD) | `2026-06-14` |
-| duration | No | Race length | `24h`, `6h`, `100min`, `300km`, `Sprint` |
+| date_start | Yes | Start date (M/D/YYYY or YYYY-MM-DD) | `6/13/2026` |
+| date_end | Yes | End date (M/D/YYYY or YYYY-MM-DD) | `6/14/2026` |
+| time_start | No | Start time, track-local 24h | `16:00` |
+| time_end | No | End time, track-local 24h | `16:00` |
+| duration | No | Race length; sets end time when `time_end` is blank | `24h`, `6h`, `100min`, `300km`, `Sprint` |
 | session_type | No | Event type | `Race`, `Qualifying`, `Test` |
+| timezone | Yes* | IANA zone of the track | `Europe/Paris` |
 | notes | No | Free text | `Season finale` |
+
+\*Required when `time_start` is set. Timed events are converted to UTC in the feed, so they show in your phone's local time. Rows without `time_start` become all-day events with `(TBA)` in the title.

@@ -185,14 +185,113 @@ WEC,6 Hours of Barcelona - Qualifying,Circuit de Barcelona-Catalunya,"Montmelo, 
 WEC,6 Hours of Barcelona - Race,Circuit de Barcelona-Catalunya,"Montmelo, Spain",10/18/2026,10/18/2026,12:00,18:00,6h,Race,Europe/Madrid,Round 7 - replaces Qatar 1812km (Middle East situation)
 Supercars,Sandown 500,Sandown Raceway,"Melbourne, VIC, Australia",11/6/2026,11/8/2026,,,,Race,Australia/Melbourne,"Penrite Oil Sandown 500 - Finals Series - Race 33 Sat 15:30, Race 34 Sun 15:30 (shootouts Sat 12:05, Sun 12:05)"
 WEC,6 Hours of Monza - Qualifying,Autodromo Nazionale Monza,"Monza, Italy",11/7/2026,11/7/2026,14:20,15:35,~75min,Qualifying,Europe/Rome,"Quali + Hyperpole (LMGT3 from 14:20, Hypercar from 15:00) - replaces 8H Bahrain"
-SuperGT,Super GT Motegi Rd3 - Qualifying,Mobility Resort Motegi,"Motegi, Japan",11/7/2026,11/7/2026,,,~1h,Qualifying,Asia/Tokyo,
-SuperGT,Super GT Motegi Rd3 - Race,Mobility Resort Motegi,"Motegi, Japan",11/7/2026,11/7/2026,,,250km,Race,Asia/Tokyo,Round 3 - replaces Sepang - Motegi double-header
-SuperGT,Super GT Motegi - Qualifying,Mobility Resort Motegi,"Motegi, Japan",11/8/2026,11/8/2026,,,~1h,Qualifying,Asia/Tokyo,
+SuperGT,Super GT Motegi Rd3 - Qualifying,Mobility Resort Motegi,"Motegi, Japan",11/7/2026,11/7/2026,09:00,09:45,45min,Qualifying,Asia/Tokyo,"GT300 09:00, GT500 09:30"
+SuperGT,Super GT Motegi Rd3 - Race,Mobility Resort Motegi,"Motegi, Japan",11/7/2026,11/7/2026,14:00,,250km,Race,Asia/Tokyo,Round 3 - replaces Sepang - Motegi double-header
+SuperGT,Super GT Motegi - Qualifying,Mobility Resort Motegi,"Motegi, Japan",11/8/2026,11/8/2026,09:45,10:30,45min,Qualifying,Asia/Tokyo,"GT300 09:45, GT500 10:15"
 WEC,6 Hours of Monza - Race,Autodromo Nazionale Monza,"Monza, Italy",11/8/2026,11/8/2026,11:00,17:00,6h,Race,Europe/Rome,Round 8 - Season finale - replaces 8H Bahrain
-SuperGT,Super GT Motegi - Race,Mobility Resort Motegi,"Motegi, Japan",11/8/2026,11/8/2026,,,250km,Race,Asia/Tokyo,Round 8 - Grand Final (quali same day) - last year of tire war
+SuperGT,Super GT Motegi - Race,Mobility Resort Motegi,"Motegi, Japan",11/8/2026,11/8/2026,14:00,,250km,Race,Asia/Tokyo,Round 8 - Grand Final (quali same day) - last year of tire war
 Macau,Macau GT Cup - Qualifying,Guia Circuit,Macau,11/20/2026,11/21/2026,,,~30min,Qualifying,Asia/Macau,FIA GT World Cup - qualifying/Super Pole (race weekend Nov 19-22)
 Macau,Macau GT Cup - Race,Guia Circuit,Macau,11/22/2026,11/22/2026,,,Sprint,Race,Asia/Macau,Iconic street race - one-shot GT3 sprint - main race Sun Nov 22
 Supercars,Adelaide Grand Final,Adelaide Street Circuit,"Adelaide, SA, Australia",11/26/2026,11/29/2026,,,,Race,Australia/Adelaide,bp Adelaide Grand Final - races Fri 16:20 / Sat 15:20 / Sun 15:15 - 2026 champion crowned Sun Nov 29
 GTWCAus,GTWC Australia - Race 11,Adelaide Street Circuit,"Adelaide, South Australia",11/28/2026,11/28/2026,09:10,10:10,1h,Race,Australia/Adelaide,https://www.youtube.com/@GTWorld
 GTWCAus,GTWC Australia - Race 12,Adelaide Street Circuit,"Adelaide, South Australia",11/29/2026,11/29/2026,09:40,10:40,1h,Race,Australia/Adelaide,https://www.youtube.com/@GTWorld
-24HSeries,Michelin 12H Yas - Race,Yas Marina Circuit,"Abu Dhabi, UAE",12/12/2026,12/13/2026,,,12h,Race,Asia/Dubai,"Middle East Trophy round, watch: https://www.youtube.com/user/24HSeries"
+24HSeries,Michelin 24H Kyalami - Race,Kyalami Grand Prix Circuit,"Midrand, South Africa",1/9/2027,1/10/2027,,,24h,Race,Africa/Johannesburg,"Replaces 24H Dubai, watch: https://www.youtube.com/user/24HSeries"
+IMSA,Rolex 24 at Daytona - Race,Daytona International Speedway,"Daytona Beach, FL, USA",1/30/2027,1/31/2027,,,24h,Race,America/New_York,Season opener - Endurance Cup | WATCH WITH VPN (UK WORKED LAST): www.imsa.com/tvlive/
+IGTC,Bathurst 12 Hour - Race,Mount Panorama Circuit,"Bathurst, NSW, Australia",2/14/2027,2/14/2027,,,12h,Race,Australia/Sydney,IGTC opener
+24HSeries,Michelin 12H Mugello - Race,Autodromo Internazionale del Mugello,"Scarperia, Italy",3/20/2027,3/21/2027,,,12h,Race,Europe/Rome,"European Series opener, watch: https://www.youtube.com/user/24HSeries"
+IMSA,12 Hours of Sebring - Race,Sebring International Raceway,"Sebring, FL, USA",3/20/2027,3/20/2027,,,12h,Race,America/New_York,Endurance Cup | WATCH WITH VPN (UK WORKED LAST): www.imsa.com/tvlive/
+NLS,NLS1 Nurburgring - Race,Nurburgring Nordschleife,"Nurburg, Germany",3/20/2027,3/20/2027,,,,Race,Europe/Berlin,
+WEC,Qatar 1812 km - Race,Lusail International Circuit,"Lusail, Qatar",3/27/2027,3/27/2027,,,1812km,Race,Asia/Qatar,Round 1 - Season opener
+GTWCA,GTWCA Sonoma - Race,Sonoma Raceway,"Sonoma, CA, USA",4/3/2027,4/4/2027,,,3h,Race,America/Los_Angeles,Round 1 | https://www.youtube.com/@GTWorld
+GTWCAsia,GTWC Asia Sepang - Race 1,Sepang International Circuit,"Kuala Lumpur, Malaysia",4/3/2027,4/3/2027,,,1h,Race,Asia/Kuala_Lumpur,Round 1 | https://www.youtube.com/@GTWorld
+GTWCAsia,GTWC Asia Sepang - Race 2,Sepang International Circuit,"Kuala Lumpur, Malaysia",4/4/2027,4/4/2027,,,1h,Race,Asia/Kuala_Lumpur,Round 2 | https://www.youtube.com/@GTWorld
+SuperGT,Super GT Okayama - Race,Okayama International Circuit,"Mimasaka, Japan",4/4/2027,4/4/2027,,,,Race,Asia/Tokyo,Round 1 - Season opener
+24HSeries,Michelin 12H Spa - Race,Circuit de Spa-Francorchamps,"Stavelot, Belgium",4/10/2027,4/11/2027,,,12h,Race,Europe/Brussels,"European Series Rd2, watch: https://www.youtube.com/user/24HSeries"
+WEC,6 Hours of Imola - Race,Autodromo Enzo e Dino Ferrari,"Imola, Italy",4/11/2027,4/11/2027,,,6h,Race,Europe/Rome,Round 2
+GTWCAus,GTWC Australia - Round 1,Phillip Island Grand Prix Circuit,"Phillip Island, Victoria",4/17/2027,4/18/2027,,,,Race,Australia/Melbourne,https://www.youtube.com/@GTWorld
+GTWCE,GTWCE Paul Ricard 6h - Race,Circuit Paul Ricard,"Le Castellet, France",4/17/2027,4/17/2027,,,6h,Race,Europe/Paris,Saturday evening race - Endurance Cup Rd1 | https://www.youtube.com/@GTWorld
+IMSA,Acura GP of Long Beach - Race,Long Beach Street Circuit,"Long Beach, CA, USA",4/17/2027,4/17/2027,,,100min,Race,America/Los_Angeles,GTP + GTD only | WATCH WITH VPN (UK WORKED LAST): www.imsa.com/tvlive/
+NLS,NLS2 Nurburgring - Race,Nurburgring Nordschleife,"Nurburg, Germany",4/17/2027,4/17/2027,,,,Race,Europe/Berlin,
+DTM,DTM Red Bull Ring - Race 1,Red Bull Ring,"Spielberg, Austria",4/24/2027,4/24/2027,,,,Race,Europe/Vienna,Season opener - Race 1
+DTM,DTM Red Bull Ring - Race 2,Red Bull Ring,"Spielberg, Austria",4/25/2027,4/25/2027,,,,Race,Europe/Vienna,Race 2
+WEC,6 Hours of Silverstone - Race,Silverstone Circuit,"Silverstone, UK",4/25/2027,4/25/2027,,,6h,Race,Europe/London,Round 3 - Silverstone returns
+GTWCAsia,GTWC Asia Chang - Race 1,Chang International Circuit,"Buriram, Thailand",5/1/2027,5/1/2027,,,1h,Race,Asia/Bangkok,Round 3 | https://www.youtube.com/@GTWorld
+GTWCE,GTWCE Brands Hatch Sprint - Race 1,Brands Hatch,"Kent, UK",5/1/2027,5/1/2027,,,,Race,Europe/London,Sprint Cup Rd1 - Race 1 | https://www.youtube.com/@GTWorld
+GTWCAsia,GTWC Asia Chang - Race 2,Chang International Circuit,"Buriram, Thailand",5/2/2027,5/2/2027,,,1h,Race,Asia/Bangkok,Round 4 | https://www.youtube.com/@GTWorld
+GTWCE,GTWCE Brands Hatch Sprint - Race 2,Brands Hatch,"Kent, UK",5/2/2027,5/2/2027,,,,Race,Europe/London,Sprint Cup Rd1 - Race 2 | https://www.youtube.com/@GTWorld
+IMSA,IMSA Laguna Seca - Race,WeatherTech Raceway Laguna Seca,"Monterey, CA, USA",5/2/2027,5/2/2027,,,2h40min,Race,America/Los_Angeles,WATCH WITH VPN (UK WORKED LAST): www.imsa.com/tvlive/
+SuperGT,Super GT Fuji 1 - Race,Fuji Speedway,"Oyama, Japan",5/4/2027,5/4/2027,,,,Race,Asia/Tokyo,Round 2 - Golden Week
+DTM,DTM Oschersleben - Race 1,Motorsport Arena Oschersleben,"Oschersleben, Germany",5/8/2027,5/8/2027,,,,Race,Europe/Berlin,Race 1
+GTWCA,GTWCA Texas 8 Hour - Race,Circuit of the Americas,"Austin, TX, USA",5/8/2027,5/8/2027,,,8h,Race,America/Chicago,Round 2 - IGTC Rd2 - replaces Indy 8 Hour | https://www.youtube.com/@GTWorld
+DTM,DTM Oschersleben - Race 2,Motorsport Arena Oschersleben,"Oschersleben, Germany",5/9/2027,5/9/2027,,,,Race,Europe/Berlin,Race 2
+24HSeries,Michelin 12H Red Bull Ring - Race,Red Bull Ring,"Spielberg, Austria",5/15/2027,5/16/2027,,,12h,Race,Europe/Vienna,"European Series Rd3, watch: https://www.youtube.com/user/24HSeries"
+WEC,6 Hours of Spa - Race,Circuit de Spa-Francorchamps,"Stavelot, Belgium",5/15/2027,5/15/2027,,,6h,Race,Europe/Brussels,Round 4
+GTWCA,GTWCA Watkins Glen - Race,Watkins Glen International,"Watkins Glen, NY, USA",5/22/2027,5/23/2027,,,3h,Race,America/New_York,Round 3 | https://www.youtube.com/@GTWorld
+GTWCE,GTWCE Imola 3h - Race,Autodromo Enzo e Dino Ferrari,"Imola, Italy",5/23/2027,5/23/2027,,,3h,Race,Europe/Rome,Endurance Cup Rd2 - replaces Monza | https://www.youtube.com/@GTWorld
+GTWCAus,GTWC Australia - Round 2,The Bend Motorsport Park,"Tailem Bend, South Australia",5/29/2027,5/30/2027,,,,Race,Australia/Adelaide,https://www.youtube.com/@GTWorld
+IGTC,24 Hours of Nurburgring - Race,Nurburgring Nordschleife,"Nurburg, Germany",5/29/2027,5/30/2027,,,24h,Race,Europe/Berlin,IGTC Rd3
+24HSeries,Michelin 12H Paul Ricard - Race,Circuit Paul Ricard,"Le Castellet, France",6/5/2027,6/6/2027,,,12h,Race,Europe/Paris,"European Series Rd4, watch: https://www.youtube.com/user/24HSeries"
+IMSA,Detroit Grand Prix - Race,Detroit Street Circuit,"Detroit, MI, USA",6/5/2027,6/5/2027,,,100min,Race,America/Detroit,GTP + GTD Pro only | WATCH WITH VPN (UK WORKED LAST): www.imsa.com/tvlive/
+GTWCAsia,GTWC Asia Suzuka - Race 1,Suzuka Circuit,"Suzuka, Japan",6/12/2027,6/12/2027,,,1h,Race,Asia/Tokyo,Round 5 | https://www.youtube.com/@GTWorld
+WEC,24 Hours of Le Mans - Race,Circuit de la Sarthe,"Le Mans, France",6/12/2027,6/13/2027,,,24h,Race,Europe/Paris,Round 5
+GTWCAsia,GTWC Asia Suzuka - Race 2,Suzuka Circuit,"Suzuka, Japan",6/13/2027,6/13/2027,,,1h,Race,Asia/Tokyo,Round 6 | https://www.youtube.com/@GTWorld
+DTM,DTM Lausitzring - Race 1,Lausitzring,"Klettwitz, Germany",6/19/2027,6/19/2027,,,,Race,Europe/Berlin,Race 1
+GTWCA,GTWCA Road Atlanta - Race,Road Atlanta,"Braselton, GA, USA",6/19/2027,6/20/2027,,,3h,Race,America/New_York,Round 4 | https://www.youtube.com/@GTWorld
+SuperGT,Super GT Sepang - Race,Sepang International Circuit,"Kuala Lumpur, Malaysia",6/19/2027,6/19/2027,,,,Race,Asia/Kuala_Lumpur,Round 3 - Saturday evening race
+DTM,DTM Lausitzring - Race 2,Lausitzring,"Klettwitz, Germany",6/20/2027,6/20/2027,,,,Race,Europe/Berlin,Race 2
+GTWCE,24 Hours of Spa - Race,Circuit de Spa-Francorchamps,"Stavelot, Belgium",6/26/2027,6/27/2027,,,24h,Race,Europe/Brussels,Endurance Cup Rd3 - IGTC Rd4 | https://www.youtube.com/@GTWorld
+IMSA,Sahlen's 6 Hours of the Glen - Race,Watkins Glen International,"Watkins Glen, NY, USA",6/27/2027,6/27/2027,,,6h,Race,America/New_York,Endurance Cup | WATCH WITH VPN (UK WORKED LAST): www.imsa.com/tvlive/
+DTM,DTM Norisring - Race 1,Norisring,"Nuremberg, Germany",7/3/2027,7/3/2027,,,,Race,Europe/Berlin,Race 1
+NLS,NLS3 Nurburgring - Race,Nurburgring Nordschleife,"Nurburg, Germany",7/3/2027,7/3/2027,,,,Race,Europe/Berlin,
+DTM,DTM Norisring - Race 2,Norisring,"Nuremberg, Germany",7/4/2027,7/4/2027,,,,Race,Europe/Berlin,Race 2
+GTWCAsia,GTWC Asia Fuji - Race 1,Fuji International Speedway,"Oyama, Japan",7/10/2027,7/10/2027,,,1h,Race,Asia/Tokyo,Round 7 | https://www.youtube.com/@GTWorld
+GTWCAsia,GTWC Asia Fuji - Race 2,Fuji International Speedway,"Oyama, Japan",7/11/2027,7/11/2027,,,1h,Race,Asia/Tokyo,Round 8 | https://www.youtube.com/@GTWorld
+IMSA,IMSA CTMP - Race,Canadian Tire Motorsport Park,"Bowmanville, ON, Canada",7/11/2027,7/11/2027,,,2h40min,Race,America/Toronto,LMP2 + GTD Pro + GTD only | WATCH WITH VPN (UK WORKED LAST): www.imsa.com/tvlive/
+WEC,6 Hours of Sao Paulo - Race,Autodromo Jose Carlos Pace,"Sao Paulo, Brazil",7/11/2027,7/11/2027,,,6h,Race,America/Sao_Paulo,Round 6
+GTWCE,GTWCE Misano Sprint - Race 1,Misano World Circuit,"Misano Adriatico, Italy",7/17/2027,7/17/2027,,,,Race,Europe/Rome,Sprint Cup Rd2 - Race 1 | https://www.youtube.com/@GTWorld
+GTWCE,GTWCE Misano Sprint - Race 2,Misano World Circuit,"Misano Adriatico, Italy",7/18/2027,7/18/2027,,,,Race,Europe/Rome,Sprint Cup Rd2 - Race 2 | https://www.youtube.com/@GTWorld
+GTWCAus,GTWC Australia - Round 3,Sydney Motorsport Park,"Eastern Creek, New South Wales",7/24/2027,7/25/2027,,,,Race,Australia/Sydney,https://www.youtube.com/@GTWorld
+GTWCE,GTWCE Magny-Cours Sprint - Race 1,Circuit de Nevers Magny-Cours,"Magny-Cours, France",7/31/2027,7/31/2027,,,,Race,Europe/Paris,Sprint Cup Rd3 - Race 1 | https://www.youtube.com/@GTWorld
+GTWCE,GTWCE Magny-Cours Sprint - Race 2,Circuit de Nevers Magny-Cours,"Magny-Cours, France",8/1/2027,8/1/2027,,,,Race,Europe/Paris,Sprint Cup Rd3 - Race 2 | https://www.youtube.com/@GTWorld
+IMSA,IMSA Road America - Race,Road America,"Elkhart Lake, WI, USA",8/1/2027,8/1/2027,,,6h,Race,America/Chicago,Endurance Cup | WATCH WITH VPN (UK WORKED LAST): www.imsa.com/tvlive/
+SuperGT,Super GT Suzuka - Race,Suzuka Circuit,"Suzuka, Japan",8/1/2027,8/1/2027,,,,Race,Asia/Tokyo,Round 4
+DTM,DTM Zandvoort - Race 1,Circuit Zandvoort,"Zandvoort, Netherlands",8/7/2027,8/7/2027,,,,Race,Europe/Amsterdam,Race 1
+NLS,NLS4 Nurburgring - Race,Nurburgring Nordschleife,"Nurburg, Germany",8/7/2027,8/7/2027,,,6h,Race,Europe/Berlin,6-hour race
+DTM,DTM Zandvoort - Race 2,Circuit Zandvoort,"Zandvoort, Netherlands",8/8/2027,8/8/2027,,,,Race,Europe/Amsterdam,Race 2
+DTM,DTM Nurburgring - Race 1,Nurburgring,"Nurburg, Germany",8/21/2027,8/21/2027,,,,Race,Europe/Berlin,Race 1
+DTM,DTM Nurburgring - Race 2,Nurburgring,"Nurburg, Germany",8/22/2027,8/22/2027,,,,Race,Europe/Berlin,Race 2
+IMSA,IMSA VIR - Race,VIRginia International Raceway,"Alton, VA, USA",8/22/2027,8/22/2027,,,2h40min,Race,America/New_York,GTD Pro + GTD only | WATCH WITH VPN (UK WORKED LAST): www.imsa.com/tvlive/
+GTWCA,GTWCA Road America - Race,Road America,"Elkhart Lake, WI, USA",8/28/2027,8/29/2027,,,3h,Race,America/Chicago,Round 5 | https://www.youtube.com/@GTWorld
+GTWCE,GTWCE Nurburgring 3h - Race,Nurburgring,"Nurburg, Germany",8/29/2027,8/29/2027,,,3h,Race,Europe/Berlin,Endurance Cup Rd4 | https://www.youtube.com/@GTWorld
+IGTC,Suzuka 1000km - Race,Suzuka Circuit,"Suzuka, Japan",9/5/2027,9/5/2027,,,1000km,Race,Asia/Tokyo,IGTC Rd5 finale - joint event with Super GT GT300
+24HSeries,Michelin 24H Barcelona - Race,Circuit de Barcelona-Catalunya,"Barcelona, Spain",9/11/2027,9/12/2027,,,24h,Race,Europe/Madrid,"European Series finale, watch: https://www.youtube.com/user/24HSeries"
+GTWCA,GTWCA Barber - Race,Barber Motorsports Park,"Birmingham, AL, USA",9/11/2027,9/12/2027,,,3h,Race,America/Chicago,Round 6 | https://www.youtube.com/@GTWorld
+NLS,NLS5 Nurburgring - Race,Nurburgring Nordschleife,"Nurburg, Germany",9/11/2027,9/11/2027,,,4h,Race,Europe/Berlin,Double-header with NLS6
+NLS,NLS6 Nurburgring - Race,Nurburgring Nordschleife,"Nurburg, Germany",9/12/2027,9/12/2027,,,4h,Race,Europe/Berlin,Double-header with NLS5
+WEC,Lone Star Le Mans - Race,Circuit of the Americas,"Austin, TX, USA",9/12/2027,9/12/2027,,,,Race,America/Chicago,Round 7
+GTWCAus,GTWC Australia - Round 4,Queensland Raceway,"Ipswich, Queensland",9/18/2027,9/19/2027,,,,Race,Australia/Brisbane,https://www.youtube.com/@GTWorld
+GTWCE,GTWCE Zandvoort Sprint - Race 1,Circuit Zandvoort,"Zandvoort, Netherlands",9/18/2027,9/18/2027,,,,Race,Europe/Amsterdam,Sprint Cup Rd4 - Race 1 | https://www.youtube.com/@GTWorld
+GTWCE,GTWCE Zandvoort Sprint - Race 2,Circuit Zandvoort,"Zandvoort, Netherlands",9/19/2027,9/19/2027,,,,Race,Europe/Amsterdam,Sprint Cup Rd4 - Race 2 | https://www.youtube.com/@GTWorld
+IMSA,Battle on the Bricks - Race,Indianapolis Motor Speedway,"Indianapolis, IN, USA",9/19/2027,9/19/2027,,,2h40min,Race,America/Indiana/Indianapolis,WATCH WITH VPN (UK WORKED LAST): www.imsa.com/tvlive/
+SuperGT,Super GT Sugo - Race,Sportsland Sugo,"Murata, Japan",9/19/2027,9/19/2027,,,,Race,Asia/Tokyo,Round 5
+DTM,DTM Sachsenring - Race 1,Sachsenring,"Hohenstein-Ernstthal, Germany",9/25/2027,9/25/2027,,,,Race,Europe/Berlin,Race 1
+NLS,NLS7 Nurburgring - Race,Nurburgring Nordschleife,"Nurburg, Germany",9/25/2027,9/25/2027,,,,Race,Europe/Berlin,
+DTM,DTM Sachsenring - Race 2,Sachsenring,"Hohenstein-Ernstthal, Germany",9/26/2027,9/26/2027,,,,Race,Europe/Berlin,Race 2
+WEC,6 Hours of Fuji - Race,Fuji Speedway,"Oyama, Japan",9/26/2027,9/26/2027,,,6h,Race,Asia/Tokyo,Round 8
+GTWCA,GTWCA Indianapolis - Race,Indianapolis Motor Speedway,"Indianapolis, IN, USA",10/2/2027,10/3/2027,,,3h,Race,America/Indiana/Indianapolis,Round 7 - Season finale | https://www.youtube.com/@GTWorld
+GTWCAsia,GTWC Asia Beijing - Race 1,Beijing Street Circuit,"Beijing, China",10/2/2027,10/2/2027,,,1h,Race,Asia/Shanghai,Round 9 | https://www.youtube.com/@GTWorld
+GTWCE,GTWCE Hungaroring Sprint - Race 1,Hungaroring,"Mogyorod, Hungary",10/2/2027,10/2/2027,,,,Race,Europe/Budapest,Sprint Cup Rd5 finale - Race 1 | https://www.youtube.com/@GTWorld
+GTWCAsia,GTWC Asia Beijing - Race 2,Beijing Street Circuit,"Beijing, China",10/3/2027,10/3/2027,,,1h,Race,Asia/Shanghai,Round 10 | https://www.youtube.com/@GTWorld
+GTWCE,GTWCE Hungaroring Sprint - Race 2,Hungaroring,"Mogyorod, Hungary",10/3/2027,10/3/2027,,,,Race,Europe/Budapest,Sprint Cup Rd5 finale - Race 2 | https://www.youtube.com/@GTWorld
+DTM,DTM Hockenheimring - Race 1,Hockenheimring,"Hockenheim, Germany",10/9/2027,10/9/2027,,,,Race,Europe/Berlin,Race 1
+IMSA,Motul Petit Le Mans - Race,Road Atlanta,"Braselton, GA, USA",10/9/2027,10/9/2027,,,10h,Race,America/New_York,Season finale - Endurance Cup | WATCH WITH VPN (UK WORKED LAST): www.imsa.com/tvlive/
+NLS,NLS8 Nurburgring - Race,Nurburgring Nordschleife,"Nurburg, Germany",10/9/2027,10/9/2027,,,,Race,Europe/Berlin,Season finale
+DTM,DTM Hockenheimring - Race 2,Hockenheimring,"Hockenheim, Germany",10/10/2027,10/10/2027,,,,Race,Europe/Berlin,Season finale - Race 2
+SuperGT,Super GT Autopolis - Race,Autopolis,"Hita, Japan",10/17/2027,10/17/2027,,,,Race,Asia/Tokyo,Round 6
+GTWCAsia,GTWC Asia Shanghai - Race 1,Shanghai International Circuit,"Shanghai, China",10/23/2027,10/23/2027,,,1h,Race,Asia/Shanghai,Round 11 | https://www.youtube.com/@GTWorld
+GTWCAsia,GTWC Asia Shanghai - Race 2,Shanghai International Circuit,"Shanghai, China",10/24/2027,10/24/2027,,,1h,Race,Asia/Shanghai,Round 12 - Season finale | https://www.youtube.com/@GTWorld
+GTWCE,GTWCE Barcelona - Race,Circuit de Barcelona-Catalunya,"Barcelona, Spain",10/24/2027,10/24/2027,,,,Race,Europe/Madrid,Endurance Cup Rd5 - Season finale | https://www.youtube.com/@GTWorld
+GTWCAus,GTWC Australia - Round 5,Mount Panorama Circuit,"Bathurst, NSW, Australia",10/30/2027,10/31/2027,,,,Race,Australia/Sydney,https://www.youtube.com/@GTWorld
+WEC,8 Hours of Bahrain - Race,Bahrain International Circuit,"Sakhir, Bahrain",11/6/2027,11/6/2027,,,8h,Race,Asia/Bahrain,Round 9 - Season finale
+SuperGT,Super GT Fuji 2 - Race,Fuji Speedway,"Oyama, Japan",11/7/2027,11/7/2027,,,,Race,Asia/Tokyo,Round 7
+SuperGT,Super GT Motegi - Race,Mobility Resort Motegi,"Motegi, Japan",11/21/2027,11/21/2027,,,,Race,Asia/Tokyo,Round 8 - Season finale

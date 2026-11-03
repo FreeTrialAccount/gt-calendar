@@ -2,8 +2,8 @@
 GT Racing Calendar Generator
 Reads races.csv and produces gt-racing-calendar.ics
 
-Events with time_start + timezone → proper DTSTART;TZID= entries
-Events without times → all-day DATE events (fallback for TBC)
+Events with time_start + timezone → track-local time converted to UTC (DTSTART:...Z)
+Events without times → all-day DATE events with " (TBA)" appended to the title
 Handles both YYYY-MM-DD and M/D/YYYY date formats (Excel compatibility)
 """
 
@@ -111,65 +111,13 @@ def parse_time(time_str: str) -> tuple[int, int] | None:
 # ── Timezone Handling ─────────────────────────────────────────────────────────
 
 
-def get_vtimezone(tz_id: str) -> str:
-    """Generate a VTIMEZONE block for the given IANA timezone."""
-    try:
-        tz = ZoneInfo(tz_id)
-    except (KeyError, Exception):
-        return ""
+def to_utc_stamp(local: datetime, tz: ZoneInfo) -> str:
+    """Interpret a naive track-local datetime in tz and format it as UTC (…Z).
 
-    jan = datetime(2026, 1, 15, tzinfo=tz)
-    jul = datetime(2026, 7, 15, tzinfo=tz)
-
-    jan_offset = jan.utcoffset()
-    jul_offset = jul.utcoffset()
-    jan_name = jan.tzname()
-    jul_name = jul.tzname()
-
-    def format_offset(td: timedelta) -> str:
-        total = int(td.total_seconds())
-        sign = "+" if total >= 0 else "-"
-        total = abs(total)
-        h = total // 3600
-        m = (total % 3600) // 60
-        return f"{sign}{h:02d}{m:02d}"
-
-    lines = ["BEGIN:VTIMEZONE", f"TZID:{tz_id}"]
-
-    if jan_offset == jul_offset:
-        lines.extend([
-            "BEGIN:STANDARD",
-            "DTSTART:19700101T000000",
-            f"TZOFFSETFROM:{format_offset(jan_offset)}",
-            f"TZOFFSETTO:{format_offset(jan_offset)}",
-            f"TZNAME:{jan_name}",
-            "END:STANDARD",
-        ])
-    else:
-        std_offset = min(jan_offset, jul_offset)
-        dst_offset = max(jan_offset, jul_offset)
-        std_name = jan_name if jan_offset <= jul_offset else jul_name
-        dst_name = jul_name if jul_offset >= jan_offset else jan_name
-
-        lines.extend([
-            "BEGIN:STANDARD",
-            "DTSTART:19701101T020000",
-            "RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=11",
-            f"TZOFFSETFROM:{format_offset(dst_offset)}",
-            f"TZOFFSETTO:{format_offset(std_offset)}",
-            f"TZNAME:{std_name}",
-            "END:STANDARD",
-            "BEGIN:DAYLIGHT",
-            "DTSTART:19700308T020000",
-            "RRULE:FREQ=YEARLY;BYDAY=2SU;BYMONTH=3",
-            f"TZOFFSETFROM:{format_offset(std_offset)}",
-            f"TZOFFSETTO:{format_offset(dst_offset)}",
-            f"TZNAME:{dst_name}",
-            "END:DAYLIGHT",
-        ])
-
-    lines.append("END:VTIMEZONE")
-    return "\r\n".join(lines)
+    zoneinfo applies each zone's real DST rules (EU last-Sunday, southern
+    hemisphere, no-DST zones), so no VTIMEZONE blocks are needed.
+    """
+    return local.replace(tzinfo=tz).astimezone(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
 
 
 # ── ICS Building ──────────────────────────────────────────────────────────────
@@ -189,17 +137,15 @@ def fold_line(line: str) -> str:
     if len(encoded) <= 75:
         return line
     result = []
-    while len(encoded) > 75:
-        cut = 75 if not result else 74
-        while cut > 0 and (encoded[cut] & 0xC0) == 0x80:
-            cut -= 1
-        if result:
-            result.append(" " + encoded[:cut].decode("utf-8"))
-        else:
-            result.append(encoded[:cut].decode("utf-8"))
+    while encoded:
+        # First line holds 75 octets; continuation lines 74 + the leading space.
+        limit = 75 if not result else 74
+        cut = len(encoded) if len(encoded) <= limit else limit
+        while cut < len(encoded) and cut > 0 and (encoded[cut] & 0xC0) == 0x80:
+            cut -= 1  # don't split a multi-byte UTF-8 character
+        chunk = encoded[:cut].decode("utf-8")
+        result.append(chunk if not result else " " + chunk)
         encoded = encoded[cut:]
-    if encoded:
-        result.append(" " + encoded.decode("utf-8"))
     return "\r\n".join(result)
 
 
@@ -242,24 +188,24 @@ def build_event(row: dict) -> str:
     ]
 
     if time_start and tz_id:
-        # ── Timed event with timezone ──
+        # ── Timed event: track-local time → UTC ──
+        tz = ZoneInfo(tz_id)  # unknown zone raises → row skipped with a warning
         start_dt = dt_start.replace(hour=time_start[0], minute=time_start[1])
-        dtstart_str = start_dt.strftime("%Y%m%dT%H%M%S")
-        lines.append(f"DTSTART;TZID={tz_id}:{dtstart_str}")
+        lines.append(f"DTSTART:{to_utc_stamp(start_dt, tz)}")
 
         if time_end:
             end_base = dt_start if dt_start == dt_end else dt_end
             end_dt = end_base.replace(hour=time_end[0], minute=time_end[1])
             if time_end[0] < time_start[0] and dt_start == dt_end:
                 end_dt += timedelta(days=1)
-            dtend_str = end_dt.strftime("%Y%m%dT%H%M%S")
-            lines.append(f"DTEND;TZID={tz_id}:{dtend_str}")
+            lines.append(f"DTEND:{to_utc_stamp(end_dt, tz)}")
         else:
-            end_dt = start_dt + duration
-            dtend_str = end_dt.strftime("%Y%m%dT%H%M%S")
-            lines.append(f"DTEND;TZID={tz_id}:{dtend_str}")
+            # Elapsed duration, added in UTC so a DST change mid-race doesn't skew it
+            end_utc = start_dt.replace(tzinfo=tz).astimezone(timezone.utc) + duration
+            lines.append(f"DTEND:{end_utc.strftime('%Y%m%dT%H%M%SZ')}")
     else:
         # ── All-day fallback for TBC times ──
+        summary = f"{summary} (TBA)"
         dtstart_str = dt_start.strftime("%Y%m%d")
         dtend_str = (dt_end + timedelta(days=1)).strftime("%Y%m%d")
         lines.append(f"DTSTART;VALUE=DATE:{dtstart_str}")
@@ -277,8 +223,8 @@ def build_event(row: dict) -> str:
     return "\r\n".join(fold_line(line) for line in lines)
 
 
-def build_calendar(events: list[str], timezones: list[str]) -> str:
-    """Wrap events in a VCALENDAR container with VTIMEZONE blocks."""
+def build_calendar(events: list[str]) -> str:
+    """Wrap events in a VCALENDAR container (all timed events are UTC)."""
     header = "\r\n".join([
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
@@ -289,17 +235,10 @@ def build_calendar(events: list[str], timezones: list[str]) -> str:
         "METHOD:PUBLISH",
     ])
 
-    tz_block = "\r\n".join(timezones) if timezones else ""
     events_block = "\r\n".join(events)
     footer = "END:VCALENDAR"
 
-    parts = [header]
-    if tz_block:
-        parts.append(tz_block)
-    parts.append(events_block)
-    parts.append(footer)
-
-    return "\r\n".join(parts) + "\r\n"
+    return "\r\n".join([header, events_block, footer]) + "\r\n"
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
@@ -327,20 +266,13 @@ def main():
             except Exception as e:
                 print(f"WARNING: Skipping row {i} ({g(row, 'event_name')}): {e}")
 
-    # Generate VTIMEZONE blocks for all referenced timezones
-    tz_blocks = []
-    for tz_id in sorted(tz_ids_seen):
-        block = get_vtimezone(tz_id)
-        if block:
-            tz_blocks.append(block)
+    calendar = build_calendar(events)
+    out_path.write_text(calendar, encoding="utf-8", newline="")
 
-    calendar = build_calendar(events, tz_blocks)
-    out_path.write_text(calendar, encoding="utf-8")
-
-    timed = sum(1 for e in events if "TZID=" in e)
-    allday = len(events) - timed
-    print(f"Generated {OUTPUT_FILE} with {len(events)} events ({timed} timed, {allday} all-day)")
-    print(f"Timezones included: {', '.join(sorted(tz_ids_seen))}")
+    allday = sum(1 for e in events if "DTSTART;VALUE=DATE" in e)
+    timed = len(events) - allday
+    print(f"Generated {OUTPUT_FILE} with {len(events)} events ({timed} timed, {allday} all-day/TBA)")
+    print(f"Track timezones (converted to UTC): {', '.join(sorted(tz_ids_seen))}")
 
 
 if __name__ == "__main__":
