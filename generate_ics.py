@@ -1,9 +1,11 @@
 """
 GT Racing Calendar Generator
-Reads races.csv and produces gt-racing-calendar.ics
+Reads races.csv (+ optional where_to_watch.csv) and produces gt-racing-calendar.ics
 
 Events with time_start + timezone → track-local time converted to UTC (DTSTART:...Z)
 Events without times → all-day DATE events with " (TBA)" appended to the title
+status column → STATUS (CONFIRMED / TENTATIVE / CANCELLED); cancelled also flagged in title
+Watch link → row watch_url, else the series' watch_url from where_to_watch.csv
 Handles both YYYY-MM-DD and M/D/YYYY date formats (Excel compatibility)
 """
 
@@ -17,10 +19,13 @@ from zoneinfo import ZoneInfo
 
 # ── Constants ────────────────────────────────────────────────────────────────
 
-CALENDAR_NAME = "GT Racing Calendar 2026"
-CALENDAR_DESCRIPTION = "Major GT and sportscar racing series worldwide"
+CALENDAR_NAME = "GT Racing Calendar"
+CALENDAR_DESCRIPTION = "Major GT and sportscar racing series plus selected marquee events"
 OUTPUT_FILE = "gt-racing-calendar.ics"
 INPUT_FILE = "races.csv"
+WATCH_FILE = "where_to_watch.csv"  # optional per-series lookup: series,watch_url,watch_notes
+
+VALID_STATUS = {"CONFIRMED", "TENTATIVE", "CANCELLED"}  # RFC 5545 VEVENT STATUS values
 
 # Emoji/prefix per series for easy scanning on your phone
 SERIES_PREFIX = {
@@ -29,16 +34,21 @@ SERIES_PREFIX = {
     "DTM": "🇩🇪 DTM",
     "GTWCE": "🇪🇺 GTWCE",
     "SuperGT": "🇯🇵 SGT",
-    "GTWCA": "🦅 GTWCA",
-    "BritishGT": "🇬🇧 BGT",  
+    "GTWCA": "🦅 GTWCA",  
     "GTAmerica": "🇺🇸 GTA",
     "GTWCAsia": "🐉 GTWC Asia",
     "IGTC": "🌍 IGTC",
     "24HSeries": "🇪🇺 24H",
     "NLS": "🇩🇪 NLS",
     "Macau": "🇲🇴 Macau",
-    "GTWCAus": "🇦🇺 GTWC Aus",
+    "GTWCAus": "🐨 GTWC Aus",
     "Supercars": "🇦🇺 SC",
+    "AsianLMS": "🌏 AsLMS",
+    "ELMS": "🇪🇺 ELMS",
+    "SuperTaikyu": "🗻 S-Tai",
+    "Dakar": "🏁 Dakar",
+    "NASCAR": "🍺 NASCAR",
+    "IndyCar": "🏎️ IndyCar",
 }
 
 
@@ -49,6 +59,15 @@ def g(row: dict, key: str) -> str:
     """Safely get a CSV field, returning '' if missing or None."""
     val = row.get(key)
     return val.strip() if val else ""
+
+
+def load_watch_lookup(path: Path) -> dict[str, dict]:
+    """Read the per-series watch table. Missing file → empty lookup (not fatal)."""
+    if not path.exists():
+        print(f"NOTE: {path.name} not found; series watch links skipped")
+        return {}
+    with open(path, newline="", encoding="utf-8-sig") as f:
+        return {g(r, "series"): r for r in csv.DictReader(f) if g(r, "series")}
 
 
 def parse_date(date_str: str) -> datetime:
@@ -68,23 +87,23 @@ def parse_date(date_str: str) -> datetime:
 def parse_duration(duration_str: str) -> timedelta:
     """Convert human-readable duration to timedelta.
 
-    Supports formats like: 24h, 6h, 100min, 2h40min, 300km, Sprint, TBD
+    Supports formats like: 24h, 2.5h, ~75min, 2h40min, 300km, 500mi, Sprint, TBD
     For distance-based or unknown durations, returns a sensible default.
     """
-    s = duration_str.strip().lower()
+    s = duration_str.strip().lower().lstrip("~")  # "~30min" = approximately 30min
 
     if not s or s in ("tbd", "sprint"):
         return timedelta(hours=1)
 
-    match = re.match(r"(?:(\d+)h)?(?:(\d+)min)?$", s)
+    match = re.match(r"(?:(\d+(?:\.\d+)?)h)?(?:(\d+)min)?$", s)
     if match and (match.group(1) or match.group(2)):
-        hours = int(match.group(1) or 0)
+        hours = float(match.group(1) or 0)
         minutes = int(match.group(2) or 0)
         return timedelta(hours=hours, minutes=minutes)
 
-    km_match = re.match(r"(\d+)km$", s)
-    if km_match:
-        km = int(km_match.group(1))
+    dist_match = re.match(r"(\d+)(km|mi)$", s)
+    if dist_match:
+        km = int(dist_match.group(1)) * (1.609 if dist_match.group(2) == "mi" else 1)
         if km <= 300:
             return timedelta(hours=2)
         elif km <= 500:
@@ -149,9 +168,17 @@ def fold_line(line: str) -> str:
     return "\r\n".join(result)
 
 
-def build_event(row: dict) -> str:
+def build_event(row: dict, watch: dict[str, dict]) -> str:
     """Build a single VEVENT block from a CSV row."""
     series = g(row, "series")
+    series_watch = watch.get(series, {})
+    watch_url = g(row, "watch_url") or g(series_watch, "watch_url")
+    watch_notes = g(series_watch, "watch_notes")
+    drivers = [d.strip() for d in g(row, "drivers").split(";") if d.strip()]
+    status = g(row, "status").upper()
+    if status and status not in VALID_STATUS:
+        print(f"WARNING: {g(row, 'event_name')}: unknown status {status!r} ignored")
+        status = ""
     prefix = SERIES_PREFIX.get(series, series)
     summary = f"{prefix} | {g(row, 'event_name')}"
     location = g(row, "circuit")
@@ -176,7 +203,16 @@ def build_event(row: dict) -> str:
         notes_parts.append(f"Track TZ: {tz_id}")
     if g(row, "notes"):
         notes_parts.append(g(row, "notes"))
+    if drivers:
+        notes_parts.append(f"Drivers: {', '.join(drivers)}")
+    if watch_url:
+        notes_parts.append(f"Watch: {watch_url}")
+    if watch_notes:
+        notes_parts.append(watch_notes)
     description = " | ".join(notes_parts)
+
+    if status == "CANCELLED":
+        summary = f"{summary} (CANCELLED)"
 
     uid = make_uid(row)
     now = datetime.now(tz=timezone.utc).strftime("%Y%m%dT%H%M%SZ")
@@ -205,7 +241,8 @@ def build_event(row: dict) -> str:
             lines.append(f"DTEND:{end_utc.strftime('%Y%m%dT%H%M%SZ')}")
     else:
         # ── All-day fallback for TBC times ──
-        summary = f"{summary} (TBA)"
+        if status != "CANCELLED":
+            summary = f"{summary} (TBA)"
         dtstart_str = dt_start.strftime("%Y%m%d")
         dtend_str = (dt_end + timedelta(days=1)).strftime("%Y%m%d")
         lines.append(f"DTSTART;VALUE=DATE:{dtstart_str}")
@@ -216,6 +253,12 @@ def build_event(row: dict) -> str:
         f"LOCATION:{escape_ics(location)}",
         f"DESCRIPTION:{escape_ics(description)}",
         f"CATEGORIES:{escape_ics(series)}",
+    ])
+    if status:
+        lines.append(f"STATUS:{status}")
+    if watch_url:
+        lines.append(f"URL:{watch_url}")  # URI value: not text-escaped
+    lines.extend([
         "TRANSP:TRANSPARENT",
         "END:VEVENT",
     ])
@@ -225,7 +268,7 @@ def build_event(row: dict) -> str:
 
 def build_calendar(events: list[str]) -> str:
     """Wrap events in a VCALENDAR container (all timed events are UTC)."""
-    header = "\r\n".join([
+    header = "\r\n".join(fold_line(line) for line in [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
         "PRODID:-//GT Racing Calendar//EN",
@@ -252,19 +295,27 @@ def main():
         print(f"ERROR: {INPUT_FILE} not found in {csv_path.parent}")
         sys.exit(1)
 
+    watch = load_watch_lookup(Path(__file__).parent / WATCH_FILE)
     events = []
     tz_ids_seen: set[str] = set()
+    series_seen: set[str] = set()
 
     with open(csv_path, newline="", encoding="utf-8-sig") as f:
         reader = csv.DictReader(f)
         for i, row in enumerate(reader, start=2):
             try:
-                events.append(build_event(row))
+                events.append(build_event(row, watch))
                 tz_id = g(row, "timezone")
                 if tz_id:
                     tz_ids_seen.add(tz_id)
+                series_seen.add(g(row, "series"))
             except Exception as e:
                 print(f"WARNING: Skipping row {i} ({g(row, 'event_name')}): {e}")
+
+    for label, missing in (("emoji prefix", series_seen - SERIES_PREFIX.keys()),
+                           (WATCH_FILE, series_seen - watch.keys() if watch else set())):
+        if missing:
+            print(f"NOTE: series without {label}: {', '.join(sorted(missing))}")
 
     calendar = build_calendar(events)
     out_path.write_text(calendar, encoding="utf-8", newline="")
