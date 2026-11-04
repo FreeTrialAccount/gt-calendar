@@ -4,29 +4,35 @@ Subscribable iCalendar (.ics) feed of major GT and sportscar racing series.
 
 # Series covered
 
-    WEC — FIA World Endurance Championship
-    IMSA — IMSA WeatherTech SportsCar Championship
-    DTM — Deutsche Tourenwagen Masters
-    GTWCE — GT World Challenge Europe
-    SuperGT — Super GT (Japan)
-    GTWCA — GT World Challenge America
-    GTWCAsia — GT World Challenge Asia
-    GTAmerica — GT America Series
-    IGTC — Intercontinental GT Challenge
-    24HSeries — Michelin 24H Series
-    NLS — Nürburgring Langstrecken-Serie
-    Macau — FIA GT World Cup (Macau Grand Prix)
-    GTWCAus — GT World Challenge Australia
-    Supercars — Repco Supercars Championship
+	24HSeries — Michelin 24H Series
+	AsianLMS — Asian Le Mans Series (aka “Winter Le Mans Series”)
+	Dakar — Dakar Rally
+	DTM — Deutsche Tourenwagen Masters
+	ELMS — European Le Mans Series
+	GTAmerica — GT America Series
+	GTWCA — GT World Challenge America
+	GTWCAsia — GT World Challenge Asia
+	GTWCAus — GT World Challenge Australia
+	GTWCE — GT World Challenge Europe
+	IGTC — Intercontinental GT Challenge
+	IMSA — IMSA WeatherTech SportsCar Championship
+	IndyCar — NTT IndyCar Series
+	Macau — FIA GT World Cup (Macau Grand Prix)
+	NASCAR — NASCAR
+	NLS — Nürburgring Langstrecken-Serie
+	Supercars — Repco Supercars Championship
+	SuperGT — Super GT
+	SuperTaikyu — Super Taikyu Fuji 24 Hours
+	WEC — FIA World Endurance Championship
     
 
 # How-to
 
 1. Edit `races.csv`
 2. Commit and push to GitHub
-3. GitHub Actions runs `generate_ics.py` automatically
+3. GitHub Actions runs `generate_ics.py`
 4. The `.ics` file is published to GitHub Pages
-5. Your phone's subscribed calendar updates on its own
+5. Phone subscribed calendar updates on its own
 
 # Subscribe (iPhone)
 
