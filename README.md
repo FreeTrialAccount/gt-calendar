@@ -1,6 +1,6 @@
 # GT Racing Calendar
 
-Subscribable iCalendar (.ics) feed of major GT and sportscar racing series.
+Subscribable iCalendar (.ics) feed of select major GT and sportscar racing series + other marquee events.
 
 # Series covered
 
@@ -9,7 +9,6 @@ Subscribable iCalendar (.ics) feed of major GT and sportscar racing series.
 	Dakar — Dakar Rally
 	DTM — Deutsche Tourenwagen Masters
 	ELMS — European Le Mans Series
-	GTAmerica — GT America Series
 	GTWCA — GT World Challenge America
 	GTWCAsia — GT World Challenge Asia
 	GTWCAus — GT World Challenge Australia
@@ -20,19 +19,29 @@ Subscribable iCalendar (.ics) feed of major GT and sportscar racing series.
 	Macau — FIA GT World Cup (Macau Grand Prix)
 	NASCAR — NASCAR
 	NLS — Nürburgring Langstrecken-Serie
-	Supercars — Repco Supercars Championship
+	Supercars — Repco Supercars Championship (Enduro Cup and Finals Series events only)
 	SuperGT — Super GT
 	SuperTaikyu — Super Taikyu Fuji 24 Hours
 	WEC — FIA World Endurance Championship
-    
+
+# Files
+
+| File | Purpose |
+|------|---------|
+| `races.csv` | One row per session — the calendar data |
+| `where_to_watch.csv` | Default watch link and notes per series |
+| `generate_ics.py` | Builds `gt-racing-calendar.ics` from the two CSVs |
+| `.github/workflows/deploy.yml` | Runs the generator and publishes to GitHub Pages |
+
+The `.ics` file is built by GitHub Actions and is not stored in the repo (see `.gitignore`).
 
 # How-to
 
-1. Edit `races.csv`
-2. Commit and push to GitHub
+1. Edit `races.csv` (or `where_to_watch.csv` / `generate_ics.py`)
+2. Commit and push to the `main` branch
 3. GitHub Actions runs `generate_ics.py`
-4. The `.ics` file is published to GitHub Pages
-5. Phone subscribed calendar updates on its own
+4. `.ics` file is published to GitHub Pages
+5. Phone subscribed calendar updates on its own 
 
 # Subscribe (iPhone)
 
@@ -49,13 +58,33 @@ Subscribable iCalendar (.ics) feed of major GT and sportscar racing series.
 | event_name | Yes | Race/event name | `24 Hours of Le Mans` |
 | circuit | Yes | Track name | `Circuit de la Sarthe` |
 | location | No | City, country | `Le Mans, France` |
-| date_start | Yes | Start date (M/D/YYYY or YYYY-MM-DD) | `6/13/2026` |
-| date_end | Yes | End date (M/D/YYYY or YYYY-MM-DD) | `6/14/2026` |
+| date_start | Yes | Start date (M/D/YYYY; YYYY-MM-DD also accepted) | `6/13/2026` |
+| date_end | Yes | End date, same format | `6/14/2026` |
 | time_start | No | Start time, track-local 24h | `16:00` |
 | time_end | No | End time, track-local 24h | `16:00` |
-| duration | No | Race length; sets end time when `time_end` is blank | `24h`, `6h`, `100min`, `300km`, `Sprint` |
-| session_type | No | Event type | `Race`, `Qualifying`, `Test` |
+| duration | No | Session length; sets the end time when `time_end` is blank | `24h`, `2h40min`, `~75min`, `250km`, `500mi`, `Sprint` |
+| session_type | No | Session kind | `Race`, `Qualifying` |
 | timezone | Yes* | IANA zone of the track | `Europe/Paris` |
-| notes | No | Free text | `Season finale` |
+| notes | No | Free text; no URLs, and don't repeat other columns | `Season finale` |
+| status | No | `CONFIRMED`, `TENTATIVE` or `CANCELLED` | `TENTATIVE` |
+| watch_url | No | Watch link for this row only; overrides the series link in `where_to_watch.csv` | `https://…/watch-live` |
+| drivers | No | Drivers of interest, separated by `;` | `Max Verstappen` |
 
-\*Required when `time_start` is set. Timed events are converted to UTC in the feed, so they show in your phone's local time. Rows without `time_start` become all-day events with `(TBA)` in the title.
+\*Required when `time_start` is set. Timed events are converted to UTC in the feed, so they show in your phone's local time. Rows without `time_start` become all-day events spanning `date_start`–`date_end`, with `(TBA)` in the title.
+
+Notes on the columns:
+
+- **duration** — `~` marks an approximate length; the number after it is still used. Distances become a rough length (≤300 km → 2h, ≤500 km → 3h, longer → 4h); blank or `Sprint` → 1h.
+- **status** — `TENTATIVE` is for provisional calendars or an unannounced race day. Past rows are left blank. `CANCELLED` rows stay in the feed with `(CANCELLED)` in the title.
+- **Event identity** — `series` + `event_name` + `date_start` together form each event's calendar ID. Keep that combination unique; changing any of the three replaces the event on subscribed phones.
+- The event description shows duration, session, track timezone, notes, drivers and the watch link.
+
+# where_to_watch.csv format
+
+| Column | Description | Example |
+|--------|-------------|---------|
+| series | Series short code, matching `races.csv` | `IMSA` |
+| watch_url | Default watch link for every row of the series | `https://www.imsa.com/tvlive/` |
+| watch_notes | Added to every event description of the series | `VPN required` |
+
+This file is optional; if it is missing, events are built without series watch links.
